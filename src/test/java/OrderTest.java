@@ -1,3 +1,4 @@
+import com.sun.source.tree.AssertTree;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,13 +9,16 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.List;
 
 public class OrderTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+
+        String productName = "Apple iPhone 17 256GB Mist Blue";
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -37,6 +41,23 @@ public class OrderTest {
                 product.findElement(By.cssSelector(".product-item-link")).getText().equals("Apple iPhone 17 256GB Mist Blue")).findFirst().orElse(null);
 
        prod.findElement(By.cssSelector(".product-item-info .actions-primary button")).click();
+       Thread.sleep(3000);
+
+       driver.findElement(By.cssSelector(".action.showcart")).click();
+
+       driver.findElement(By.cssSelector(".action.viewcart")).click();
+
+
+       List<WebElement> cartProducts = driver.findElements(By.xpath("//td[@class='col item']//strong[@class='product-item-name']"));
+      Boolean match = cartProducts.stream().anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
+      Assert.assertTrue(match);
+
+      driver.close();
+
+
+
+
+////td[@class='col item']//strong[@class='product-item-name']
 //.product-item-info .actions-primary button
 
 
