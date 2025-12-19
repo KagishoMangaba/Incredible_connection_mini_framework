@@ -48,14 +48,8 @@ public class OrderTest {
 
 
 
-
-
-
 ////td[@class='col item']//strong[@class='product-item-name']
 //.product-item-info .actions-primary button
-
-
-
 
 
     }
