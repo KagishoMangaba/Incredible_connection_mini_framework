@@ -46,7 +46,7 @@ public class AbstractComponents {
 
     public ShoppingCartPage goToCart() {
      waitForElementToBeClickable(cartHeader);
-     return new ShoppingCartPage();
+     return new ShoppingCartPage(driver);
 
 
 
