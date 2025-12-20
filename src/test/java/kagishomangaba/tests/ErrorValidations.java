@@ -1,32 +1,23 @@
 package kagishomangaba.tests;
 
-import com.sun.source.tree.AssertTree;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import kagishomangaba.TestComponents.BaseTest;
 import kagishomangaba.pages.CataloguePage;
 import kagishomangaba.pages.LandingPage;
 import kagishomangaba.pages.ShoppingCartPage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.List;
 
+public class ErrorValidations extends BaseTest {
 
-public class OrderTest extends BaseTest {
+    @Test(groups = "Errors")
+    public void ProductMisMatch() throws IOException {
 
-    @Test
-    public void submitOrder() throws IOException {
         String productName = "Apple iPhone 17 256GB Mist Blue";
 
         LandingPage landingPage = launchApplication();
@@ -36,15 +27,11 @@ public class OrderTest extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));
 
 
-       wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(".product-item-info")));
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(".product-item-info")));
         cataloguePage.addProductToCart(productName);
         cataloguePage.goToCheckoutPage();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
-        Assert.assertTrue(shoppingCartPage.VerifyProductsDisplay(productName));
+        Assert.assertFalse(shoppingCartPage.VerifyProductsDisplay("Iphone 13 pro max 256GB"));
     }
 }
-
-
-//WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));
-//        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(".product-item-info")));

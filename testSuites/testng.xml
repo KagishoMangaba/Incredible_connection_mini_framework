@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework"><classes><class name="kagishomangaba.tests.OrderTest"><methods><include name="submitOrder"/></methods></class></classes></test></suite>

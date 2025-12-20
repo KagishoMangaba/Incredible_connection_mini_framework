@@ -1,12 +1,12 @@
 package kagishomangaba.TestComponents;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import kagishomangaba.pages.LandingPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -16,6 +16,8 @@ import java.util.logging.Logger;
 
 public class BaseTest {
 
+    public LandingPage landingPage;
+
     protected WebDriver driver;
     private static final Logger logger = Logger.getLogger(BaseTest.class.getName());
     private static final int PAGE_LOAD_TIMEOUT = 30;
@@ -24,9 +26,8 @@ public class BaseTest {
     private static final int WINDOW_HEIGHT = 900;
 
 
-
     @BeforeMethod(alwaysRun = true)
-    public void initializeDriver() throws IOException {
+    public WebDriver initializeDriver() throws IOException {
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream(
                 System.getProperty("user.dir") +
@@ -54,10 +55,12 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT));
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
 
+
         // Set window size
-        driver.manage().window().setSize(new org.openqa.selenium.Dimension(WINDOW_WIDTH, WINDOW_HEIGHT));
+        driver.manage().window().maximize();
 
         logger.info("WebDriver initialized successfully with browser: " + browserName);
+        return driver;
     }
 
     @AfterMethod(alwaysRun = true)
@@ -66,5 +69,14 @@ public class BaseTest {
             driver.quit();
             logger.info("WebDriver closed successfully");
         }
+    }
+
+    public LandingPage launchApplication() throws IOException {
+        driver = initializeDriver();
+        LandingPage landingPage = new LandingPage(driver);
+        landingPage.goTo();
+        return landingPage;
+
+
     }
 }

@@ -1,6 +1,6 @@
 package kagishomangaba.pages;
 
-import kagishomangaba.Abstractcomponents.AbstractComponents;
+import kagishomangaba.base.AbstractComponents;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,6 +48,10 @@ public class LandingPage extends AbstractComponents {
     public void addProductToCart(String productName) {
         WebElement prod = getProductByName(productName);
         prod.findElement(By.cssSelector(".action.showcart")).click();
+    }
+
+    public void goTo() {
+        driver.get("https://www.incredible.co.za/");
     }
 }
 

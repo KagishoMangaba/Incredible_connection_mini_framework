@@ -1,4 +1,4 @@
-package kagishomangaba.Abstractcomponents;
+package kagishomangaba.base;
 
 import kagishomangaba.pages.ShoppingCartPage;
 import org.openqa.selenium.By;
