@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.List;
 
 
 public class OrderTest extends BaseTest {
@@ -38,22 +39,14 @@ public class OrderTest extends BaseTest {
 
 
     @DataProvider
+    public Object[][] getData() throws IOException {
 
-    public Object[][] getData() {
-        HashMap<Object , Object> map = new HashMap<>();
-
-        map.put("product" , "Apple iPhone 17 256GB Mist Blue");
-
-        HashMap<Object , Object> map1 = new HashMap<>();
-        map1.put("product" , "Apple MacBook Air 13 M4 10 Core CPU 8 Core GPU 16GB RAM 256GB SSD Starlight");
-
-
-
-
-        return new Object [][] { {map} , {map1}  };
+        List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir") + "//src//main//java//kagishomangaba//data//TestData.json");
+        return new Object [][] { {data.get(0)}  , {data.get(1)} };
 
     }
 }
+
 
 
 //WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));

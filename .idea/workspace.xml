@@ -6,20 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d9698905-9a46-4dd4-b19a-5b6b3715c8be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/base/AbstractComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/base/AbstractComponents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ExtentReportManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/LoggerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/LoggerUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/PropertyReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/PropertyReaderUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ScreenshotUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ScreenshotUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Retry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Retry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/OrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/RemoveProducts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuites/ProductFlow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/testng_production.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuites/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/testng_smoke.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +45,7 @@
     "TestNG.ErrorValidations.ProductMisMatch.executor": "Run",
     "TestNG.ErrorValidations.executor": "Run",
     "TestNG.OrderTest (1).executor": "Run",
+    "TestNG.OrderTest (2).executor": "Run",
     "TestNG.OrderTest.SubmitOrder.executor": "Run",
     "TestNG.OrderTest.executor": "Run",
     "TestNG.OrderTest.submitOrder.executor": "Run",
@@ -75,7 +64,7 @@
       <recent name="C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework\testSuites" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.OrderTest">
+  <component name="RunManager" selected="TestNG.OrderTest (2)">
     <configuration name="C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_smoke.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="incredible_connection_automation_framework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuites/testng_smoke.xml" />
@@ -87,6 +76,23 @@
       </method>
     </configuration>
     <configuration name="OrderTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="incredible_connection_automation_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kagishomangaba.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kagishomangaba.tests" />
+      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.OrderTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="incredible_connection_automation_framework" />
       <extension name="coverage">
         <pattern>
@@ -137,31 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTests.OrderNo2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="incredible_connection_automation_framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kagishomangaba.tests.regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kagishomangaba.tests.regression" />
-      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.regression.OrderTests" />
-      <option name="METHOD_NAME" value="OrderNo2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.OrderTest (2)" />
         <item itemvalue="TestNG.OrderTest" />
         <item itemvalue="TestNG.OrderTest (1)" />
         <item itemvalue="TestNG.OrderTests" />
         <item itemvalue="TestNG.C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_smoke.xml" />
-        <item itemvalue="TestNG.OrderTests.OrderNo2" />
       </list>
     </recent_temporary>
   </component>
