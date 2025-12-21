@@ -12,13 +12,12 @@ import java.util.List;
 public class ShoppingCartPage extends AbstractComponents {
 
 
-
     private WebDriver driver;
 
     public ShoppingCartPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
-        PageFactory.initElements(driver , this);
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//td[@class='col item']//strong[@class='product-item-name']")
@@ -36,14 +35,19 @@ public class ShoppingCartPage extends AbstractComponents {
     private By cartProductsBy = By.xpath("//td[@class='col item']//strong[@class='product-item-name']");
 
 
-
     public Boolean VerifyProductsDisplay(String productName) {
         Boolean match = cartProducts.stream().anyMatch(cartProduct ->
                 cartProduct.getText().equalsIgnoreCase(productName));
         return match;
     }
 
+    public Boolean isCartEmpty() {
+        return emptyCartMessage.isDisplayed();
+    }
 
+    public int getCartItemCount() {
+        return cartProducts.size();
+    }
 
 
 }

@@ -7,9 +7,19 @@
     <list default="true" id="d9698905-9a46-4dd4-b19a-5b6b3715c8be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/base/AbstractComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/base/AbstractComponents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/CataloguePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/CataloguePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ExtentReportManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/LoggerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/LoggerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/PropertyReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/PropertyReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ScreenshotUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ScreenshotUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Listeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Retry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Retry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/OrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/RemoveProducts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testSuites/ProductFlow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/testng_production.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testSuites/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/testng_smoke.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,60 +45,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BaseScript.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OrderTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.kagishomangaba.tests.OrderTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.ErrorValidations.ProductMisMatch.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ErrorValidations.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.OrderTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.OrderTest.SubmitOrder.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.OrderTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.OrderTest.submitOrder.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.OrderTest.submitOrderTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BaseScript.executor": "Run",
+    "Application.OrderTest.executor": "Run",
+    "Application.kagishomangaba.tests.OrderTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_smoke.xml.executor": "Run",
+    "TestNG.ErrorValidations.ProductMisMatch.executor": "Run",
+    "TestNG.ErrorValidations.executor": "Run",
+    "TestNG.OrderTest (1).executor": "Run",
+    "TestNG.OrderTest.SubmitOrder.executor": "Run",
+    "TestNG.OrderTest.executor": "Run",
+    "TestNG.OrderTest.submitOrder.executor": "Run",
+    "TestNG.OrderTest.submitOrderTest.executor": "Run",
+    "TestNG.OrderTests.OrderNo2.executor": "Run",
+    "TestNG.OrderTests.executor": "Run",
+    "TestNG.OrderTests.orderMultipleProducts.executor": "Run",
+    "TestNG.SearchTests.verifySearchWithInvalidProduct.executor": "Run",
+    "TestNG.SearchTests.verifySearchWithValidProduct.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework\testSuites" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.OrderTest (1)">
-    <configuration name="ErrorValidations" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.OrderTest">
+    <configuration name="C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_smoke.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="incredible_connection_automation_framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kagishomangaba.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kagishomangaba.tests" />
-      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.ErrorValidations" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ErrorValidations.ProductMisMatch" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="incredible_connection_automation_framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kagishomangaba.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kagishomangaba.tests" />
-      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.ErrorValidations" />
-      <option name="METHOD_NAME" value="ProductMisMatch" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuites/testng_smoke.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -112,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.SubmitOrder" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="incredible_connection_automation_framework" />
       <extension name="coverage">
         <pattern>
@@ -122,25 +113,41 @@
       </extension>
       <option name="PACKAGE_NAME" value="kagishomangaba.tests" />
       <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.OrderTest" />
-      <option name="METHOD_NAME" value="SubmitOrder" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.submitOrder" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="incredible_connection_automation_framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kagishomangaba.tests.*" />
+          <option name="PATTERN" value="kagishomangaba.tests.regression.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="kagishomangaba.tests" />
-      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.OrderTest" />
-      <option name="METHOD_NAME" value="submitOrder" />
+      <option name="PACKAGE_NAME" value="kagishomangaba.tests.regression" />
+      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.regression.OrderTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTests.OrderNo2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="incredible_connection_automation_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kagishomangaba.tests.regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kagishomangaba.tests.regression" />
+      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.regression.OrderTests" />
+      <option name="METHOD_NAME" value="OrderNo2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -150,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.OrderTest" />
         <item itemvalue="TestNG.OrderTest (1)" />
-        <item itemvalue="TestNG.ErrorValidations.ProductMisMatch" />
-        <item itemvalue="TestNG.ErrorValidations" />
-        <item itemvalue="TestNG.OrderTest.submitOrder" />
-        <item itemvalue="TestNG.OrderTest.SubmitOrder" />
+        <item itemvalue="TestNG.OrderTests" />
+        <item itemvalue="TestNG.C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_smoke.xml" />
+        <item itemvalue="TestNG.OrderTests.OrderNo2" />
       </list>
     </recent_temporary>
   </component>
