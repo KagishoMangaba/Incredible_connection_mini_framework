@@ -33,7 +33,8 @@ public class BaseTest {
                 System.getProperty("user.dir") +
                         "//src//main//java//kagishomangaba//resources//GlobalData.properties"
         ); // Fixed: Added closing parenthesis
-        prop.load(fis);
+
+
 
         String browserName = prop.getProperty("browser");
 
@@ -41,9 +42,13 @@ public class BaseTest {
         if (browserName.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
+
+
         } else if (browserName.equalsIgnoreCase("edge")) { // Fixed: Added braces
             WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver();
+
+
         } else {
             logger.warning("Browser not supported: " + browserName + ". Defaulting to Chrome.");
             WebDriverManager.chromedriver().setup();
@@ -70,6 +75,8 @@ public class BaseTest {
             logger.info("WebDriver closed successfully");
         }
     }
+
+
 
     public LandingPage launchApplication() throws IOException {
         driver = initializeDriver();

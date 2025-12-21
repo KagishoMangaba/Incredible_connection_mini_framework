@@ -11,6 +11,7 @@ import java.util.List;
 
 public class CataloguePage extends AbstractComponents {
 
+
     private WebDriver driver;
 
     @FindBy(css = ".action.showcart")
@@ -22,7 +23,21 @@ public class CataloguePage extends AbstractComponents {
     @FindBy(css = ".product-item-info")
     private List<WebElement> products;
 
+    @FindBy(css = ".counter-number")
+    private WebElement cartCounter;
+
+    @FindBy(css = ".loading-mask")
+    private WebElement loadingMask;
+
+    @FindBy(css = ".message-success")
+    private WebElement successMessage;
+
     private By productsBy = By.cssSelector(".product-item-info");
+    private By loadingMaskBy = By.cssSelector(".loading-mask");
+    private By successMessageBy = By.cssSelector(".message-success");
+    private By cartCounterBy = By.cssSelector(".counter-number");
+    private By viewCartButtonBy = By.cssSelector(".action.viewcart");
+
 
     public CataloguePage(WebDriver driver) {
         super(driver);
@@ -31,7 +46,11 @@ public class CataloguePage extends AbstractComponents {
     }
 
     public ShoppingCartPage goToCheckoutPage() {
+        waitForElementToDisappear(loadingMaskBy);
+        waitForElementToAppear(cartCounterBy);
+        waitForElementToBeClickable(cartButton);
         cartButton.click();
+        waitForElementToBeClickable(viewCartButton);
         viewCartButton.click();
         return new ShoppingCartPage(driver);
     }
@@ -61,6 +80,11 @@ public class CataloguePage extends AbstractComponents {
                 product.findElement(By.cssSelector(".actions-primary button"));
         waitForElementToBeClickable(addToCartButton);
         addToCartButton.click();
+
+        waitForElementToAppear(successMessageBy);
+
+        // Wait for loading to complete after adding to cart
+        waitForElementToDisappear(loadingMaskBy);
     }
 
 

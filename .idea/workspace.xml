@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d9698905-9a46-4dd4-b19a-5b6b3715c8be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/Abstractcomponents/AbstractComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/base/AbstractComponents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/base/AbstractComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/base/AbstractComponents.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/CataloguePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/CataloguePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/LandingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Kagisho/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/OrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,7 @@
       <recent name="C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework\testSuites" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ErrorValidations.ProductMisMatch">
+  <component name="RunManager" selected="TestNG.OrderTest (1)">
     <configuration name="ErrorValidations" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="incredible_connection_automation_framework" />
       <extension name="coverage">
@@ -153,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ErrorValidations.ProductMisMatch" />
         <item itemvalue="TestNG.OrderTest (1)" />
+        <item itemvalue="TestNG.ErrorValidations.ProductMisMatch" />
         <item itemvalue="TestNG.ErrorValidations" />
         <item itemvalue="TestNG.OrderTest.submitOrder" />
         <item itemvalue="TestNG.OrderTest.SubmitOrder" />

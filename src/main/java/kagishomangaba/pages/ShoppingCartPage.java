@@ -1,6 +1,7 @@
 package kagishomangaba.pages;
 
 import kagishomangaba.base.AbstractComponents;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,6 +24,16 @@ public class ShoppingCartPage extends AbstractComponents {
     @FindBy(xpath = "//td[@class='col item']//strong[@class='product-item-name']")
     private List<WebElement> cartProducts;
 
+    @FindBy(css = ".action.primary.checkout")
+    private WebElement checkoutButton;
+
+    @FindBy(css = ".cart-empty")
+    private WebElement emptyCartMessage;
+
+    @FindBy(css = ".product-item-details .price")
+    private List productPrices;
+
+    private By cartProductsBy = By.xpath("//td[@class='col item']//strong[@class='product-item-name']");
 
 
 
@@ -31,4 +42,8 @@ public class ShoppingCartPage extends AbstractComponents {
                 cartProduct.getText().equalsIgnoreCase(productName));
         return match;
     }
+
+
+
+
 }

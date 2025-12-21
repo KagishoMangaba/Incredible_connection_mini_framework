@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+
+    <Properties>
+        <!-- Log pattern -->
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
+        </Property>
+
+        <!-- Log file location -->
+        <Property name="LOG_DIR">logs</Property>
+        <Property name="LOG_FILE">automation.log</Property>
+    </Properties>
+
+    <Appenders>
+
+        <!-- Console logging -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- Rolling file logging -->
+        <RollingFile
+                name="FileLogger"
+                fileName="${LOG_DIR}/${LOG_FILE}"
+                filePattern="${LOG_DIR}/automation-%d{yyyy-MM-dd}-%i.log.gz">
+
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+
+            <Policies>
+                <!-- Roll daily -->
+                <TimeBasedTriggeringPolicy />
+                <!-- Roll when file reaches 10MB -->
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+
+            <!-- Keep max 10 archived files -->
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <!-- Reduce noise from Selenium -->
+        <Logger name="org.openqa.selenium" level="WARN" additivity="false">
+            <AppenderRef ref="FileLogger"/>
+        </Logger>
+
+        <!-- Reduce Apache / HTTP noise -->
+        <Logger name="org.apache" level="WARN" additivity="false">
+            <AppenderRef ref="FileLogger"/>
+        </Logger>
+
+        <!-- Your project logs -->
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Root>
+
+    </Loggers>
+
+</Configuration>

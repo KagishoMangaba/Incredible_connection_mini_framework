@@ -2,6 +2,7 @@ package kagishomangaba.base;
 
 import kagishomangaba.pages.ShoppingCartPage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +14,8 @@ import java.time.Duration;
 
 public class AbstractComponents {
 
-    WebDriver driver;
+    protected WebDriver driver;
+    protected WebDriverWait wait;
 
     public AbstractComponents(WebDriver driver) {
         this.driver = driver;
@@ -24,31 +26,50 @@ public class AbstractComponents {
     WebElement cartHeader;
 
     public void waitForElementToBeClickable(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     public void waitForElementToAppear(By findBy) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 
     }
 
+    public void waitForElementToDisappear(By locator) {
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+
+    }
+
     public void waitForWebElementToAppear(WebElement findBy) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOf(findBy));
 
     }
 
+    public void clickWithJS(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", element);
+    }
+
+    public void scrollToElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
 
 
-
-
-    public ShoppingCartPage goToCart() {
+ ShoppingCartPage goToCart() {
      waitForElementToBeClickable(cartHeader);
      return new ShoppingCartPage(driver);
 
 
+    }
+
+    public String getPageTitle() {
+        return driver.getTitle();
+    }
+
+    public void navigateToUrl(String url) {
+        driver.get(url);
 
     }
+
+
 }
