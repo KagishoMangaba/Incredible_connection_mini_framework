@@ -5,8 +5,7 @@ package kagishomangaba.TestComponents;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import kagishomangaba.utilities.ExtentReportManager;
-import kagishomangaba.utilities.ScreenshotUtil;
+import kagishomangaba.utilities.ExtentReportUtil;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -16,7 +15,7 @@ import java.io.IOException;
 
 public class Listeners extends BaseTest implements ITestListener {
     ExtentTest test;
-    ExtentReports extent =  ExtentReportManager.getReportObject();
+    ExtentReports extent =  ExtentReportUtil.getReportObject();
     ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
     @Override

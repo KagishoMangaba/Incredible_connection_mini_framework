@@ -1,5 +1,7 @@
 package kagishomangaba.TestComponents;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -97,6 +99,8 @@ public class BaseTest {
 
     }
 
+    
+
     public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
         logger.info("Parsing JSON data from: " + filePath);
         String jsonContent = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
@@ -104,6 +108,9 @@ public class BaseTest {
         ObjectMapper mapper = new ObjectMapper();
         return mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {});
     }
+
+
+
 
 
 
@@ -115,5 +122,6 @@ public class BaseTest {
         return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
     }
 
+    
 
 }

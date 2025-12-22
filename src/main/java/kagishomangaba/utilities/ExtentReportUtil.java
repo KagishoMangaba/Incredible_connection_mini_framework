@@ -3,7 +3,7 @@ package kagishomangaba.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class ExtentReportManager {
+public class ExtentReportUtil {
 
     public static ExtentReports getReportObject() {
 
@@ -18,6 +18,8 @@ public class ExtentReportManager {
         extent.setSystemInfo("Tester" , "Kagisho Mangaba");
         extent.createTest(path);
         return extent;
+
+
     }
 
 }
