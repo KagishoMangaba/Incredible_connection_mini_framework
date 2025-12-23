@@ -33,7 +33,7 @@ public final class DriverFactory {
         }
 
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0)); // IMPORTANT
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // IMPORTANT
         driver.manage().window().maximize();
 
         driverThreadLocal.set(driver);

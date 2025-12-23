@@ -20,10 +20,6 @@ public class LandingPage extends AbstractComponents {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = ".product-item-info")
-    private List<WebElement> products;
-
-    private By productsBy = By.cssSelector(".product-item-info");
 
     public void searchProduct(String productName) {
         Actions a = new Actions(driver);
@@ -31,24 +27,7 @@ public class LandingPage extends AbstractComponents {
         driver.findElement(By.cssSelector("button[title='Search']")).click();
     }
 
-    public List<WebElement> getProductList() {
-        waitForElementToAppear(productsBy);
-        return products;
-    }
 
-    public WebElement getProductByName(String productName) {
-        return products.stream()
-                .filter(product ->
-                        product.findElement(By.cssSelector(".product-item-link"))
-                                .getText().equalsIgnoreCase(productName))
-                .findFirst()
-                .orElse(null);
-    }
-
-    public void addProductToCart(String productName) {
-        WebElement prod = getProductByName(productName);
-        prod.findElement(By.cssSelector(".action.showcart")).click();
-    }
 
     public void goTo() {
         driver.get("https://www.incredible.co.za/");

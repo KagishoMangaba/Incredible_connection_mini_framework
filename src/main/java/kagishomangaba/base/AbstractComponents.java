@@ -45,6 +45,12 @@ public class AbstractComponents {
 
     }
 
+    public  void clickCookieBtn() {
+        WebElement cookieButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("btn-cookie-allow")));
+        cookieButton.click();
+
+    }
+
     public void clickWithJS(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
@@ -63,6 +69,7 @@ public class AbstractComponents {
 
     }
 
+
     public String getPageTitle() {
         return driver.getTitle();
     }
@@ -71,6 +78,8 @@ public class AbstractComponents {
         driver.get(url);
 
     }
+
+
 
 
 }
