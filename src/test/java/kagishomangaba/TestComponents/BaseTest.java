@@ -89,8 +89,8 @@ public class BaseTest {
     }
 
 
-
-    public LandingPage launchApplication() throws IOException {
+    public
+ LandingPage launchApplication() throws IOException {
         driver = initializeDriver();
         LandingPage landingPage = new LandingPage(driver);
         landingPage.goTo();

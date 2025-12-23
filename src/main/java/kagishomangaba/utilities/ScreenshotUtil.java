@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class ScreenshotUtil {
 
-    public String  getScreenShot(String testCaseName , WebDriver driver) throws IOException {
+    public  String  getScreenShot(String testCaseName , WebDriver driver) throws IOException {
         TakesScreenshot ts = (TakesScreenshot)driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
