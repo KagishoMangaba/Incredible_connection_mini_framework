@@ -12,7 +12,7 @@ import java.io.IOException;
 public class OrderTests extends BaseTest {
 
 
-    @Test(groups = {"regression", "staging"}, priority = 1)
+    @Test(groups = {"regression"}, priority = 1)
     public void completeOrderFlow() throws IOException {
         String productName = "Apple iPhone 17 256GB Mist Blue";
 

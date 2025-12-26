@@ -60,23 +60,31 @@ public class BaseTest {
     public LandingPage launchApplication() {
         landingPage = new LandingPage(driver);
         landingPage.goTo();
-
-        // Handle cookie popup if present
-        dismissCookiePopup();
-
+        dismissCookiePopup(); // safe now
         return landingPage;
     }
 
+
     private void dismissCookiePopup() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+
             // Replace with the actual locator of your cookie accept button
-            WebElement cookieButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("btn-cookie-allow")));
+            By cookieBtnLocator = By.id("btn-cookie-allow");
+
+            // Wait until clickable, but do not fail if not found
+            WebElement cookieButton = wait.until(ExpectedConditions.elementToBeClickable(cookieBtnLocator));
             cookieButton.click();
-        } catch (TimeoutException e) {
-            // Cookie popup not present, nothing to do
+            logger.info("Cookie popup dismissed successfully.");
+        } catch (TimeoutException | NoSuchElementException e) {
+            // Cookie popup not present or not clickable
+            logger.info("No cookie popup found, continuing test.");
+        } catch (Exception e) {
+            // Catch-all for unexpected issues
+            logger.warning("Error while attempting to dismiss cookie popup: " + e.getMessage());
         }
     }
+
 
 
     public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
