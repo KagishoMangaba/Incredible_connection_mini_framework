@@ -1,12 +1,12 @@
 package kagishomangaba.pages;
 
-import kagishomangaba.base.BasePage;
+import kagishomangaba.base.AbstractComponents;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
-public class LandingPage extends BasePage {
+public class LandingPage extends AbstractComponents {
 
     private WebDriver driver;
 

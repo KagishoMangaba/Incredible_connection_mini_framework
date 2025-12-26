@@ -1,6 +1,6 @@
 package kagishomangaba.pages;
 
-import kagishomangaba.base.BasePage;
+import kagishomangaba.base.AbstractComponents;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class ShoppingCartPage extends BasePage {
+public class ShoppingCartPage extends AbstractComponents {
 
 
     private WebDriver driver;

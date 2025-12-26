@@ -25,6 +25,7 @@ import java.util.logging.Logger;
 public class BaseTest {
 
     protected WebDriver driver;
+
     protected LandingPage landingPage;
 
     private static final Logger logger = Logger.getLogger(BaseTest.class.getName());
