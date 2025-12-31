@@ -1,6 +1,7 @@
 package kagishomangaba.tests.regression;
 
 import kagishomangaba.TestComponents.BaseTest;
+import kagishomangaba.pages.AccountCreation;
 import kagishomangaba.pages.CataloguePage;
 import kagishomangaba.pages.LandingPage;
 import kagishomangaba.pages.ShoppingCartPage;
@@ -22,19 +23,32 @@ public class OrderTest extends BaseTest {
     @Test(dataProvider = "getData" )
     public void submitOrder(HashMap<String , String> input) throws IOException {
 
+
+
         LandingPage landingPage = launchApplication();
         landingPage.searchProduct(input.get("product"));
-
         CataloguePage cataloguePage = new CataloguePage(driver);
-        WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));
 
-
-       wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(".product-item-info")));
         cataloguePage.addProductToCart(input.get("product"));
         cataloguePage.goToCheckoutPage();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
         Assert.assertTrue(shoppingCartPage.VerifyProductsDisplay(input.get("product")));
+    }
+
+
+
+
+    @Test(dataProvider = "getData")
+    public void createAccountTest(HashMap<String , String> input) {
+        // Launch application
+        LandingPage landingPage = launchApplication();
+
+        AccountCreation accountCreationPage = landingPage.goToCreateAccountPage();
+
+        accountCreationPage.enterInformation(input.get("firstName") , input.get("lastName") , input.get("cellphoneNumber")
+                ,input.get("vatNumber") , input.get("emailAddress") , input.get("password") , input.get("passwordConfirmation"));
+
     }
 
 
@@ -45,6 +59,8 @@ public class OrderTest extends BaseTest {
         return new Object [][] { {data.get(0)}  , {data.get(1)} };
 
     }
+
+
 }
 
 

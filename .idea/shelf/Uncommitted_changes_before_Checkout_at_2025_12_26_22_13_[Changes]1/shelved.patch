@@ -1,0 +1,98 @@
+Index: src/test/java/kagishomangaba/tests/regression/ErrorValidations.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package kagishomangaba.tests.regression;\r\n\r\nimport kagishomangaba.TestComponents.BaseTest;\r\nimport kagishomangaba.pages.CataloguePage;\r\nimport kagishomangaba.pages.LandingPage;\r\nimport kagishomangaba.pages.ShoppingCartPage;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.support.ui.ExpectedConditions;\r\nimport org.openqa.selenium.support.ui.WebDriverWait;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.Test;\r\n\r\nimport java.io.IOException;\r\nimport java.time.Duration;\r\n\r\npublic class ErrorValidations extends BaseTest {\r\n\r\n    @Test()\r\n    public void ProductMisMatch() throws IOException {\r\n\r\n        String productName = \"Apple iPhone 17 256GB Mist Blue\";\r\n\r\n        LandingPage landingPage = launchApplication();\r\n        landingPage.searchProduct(productName);\r\n\r\n        CataloguePage cataloguePage = new CataloguePage(driver);\r\n        WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));\r\n\r\n\r\n        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(\".product-item-info\")));\r\n        cataloguePage.addProductToCart(productName);\r\n        cataloguePage.goToCheckoutPage();\r\n\r\n        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);\r\n        Assert.assertFalse(shoppingCartPage.VerifyProductsDisplay(\"Iphone 13 pro max 256GB\"));\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java b/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java
+--- a/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java	
++++ b/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java	
+@@ -15,7 +15,7 @@
+ 
+ public class ErrorValidations extends BaseTest {
+ 
+-    @Test()
++    @Test(groups = {"regression"})
+     public void ProductMisMatch() throws IOException {
+ 
+         String productName = "Apple iPhone 17 256GB Mist Blue";
+Index: src/test/java/kagishomangaba/tests/smoke/SearchTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package kagishomangaba.tests.smoke;\r\n\r\nimport kagishomangaba.TestComponents.BaseTest;\r\nimport kagishomangaba.pages.CataloguePage;\r\nimport kagishomangaba.pages.LandingPage;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.Test;\r\n\r\nimport java.io.IOException;\r\n\r\npublic class SearchTests extends BaseTest {\r\n\r\n    @Test(groups = {\"smoke\" , \"production\"} , priority = 1)\r\n    public void verifySearchWithValidProduct() throws IOException {\r\n        LandingPage landingPage = launchApplication();\r\n        landingPage.searchProduct(\"Ps5\");\r\n\r\n        CataloguePage cataloguePage = new CataloguePage(driver);\r\n        Assert.assertTrue(cataloguePage.getProductList().size() > 0,\r\n                \"No products found for valid search\");\r\n    }\r\n\r\n\r\n\r\n    @Test(groups = {\"smoke\", \"production\"}, priority = 2)\r\n    public void verifySearchWithInvalidProduct() throws IOException {\r\n        LandingPage landingPage = launchApplication();\r\n        landingPage.searchProduct(\"XYZ123NonExistent\");\r\n\r\n        CataloguePage cataloguePage = new CataloguePage(driver);\r\n\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/kagishomangaba/tests/smoke/SearchTests.java b/src/test/java/kagishomangaba/tests/smoke/SearchTests.java
+--- a/src/test/java/kagishomangaba/tests/smoke/SearchTests.java	
++++ b/src/test/java/kagishomangaba/tests/smoke/SearchTests.java	
+@@ -10,7 +10,7 @@
+ 
+ public class SearchTests extends BaseTest {
+ 
+-    @Test(groups = {"smoke" , "production"} , priority = 1)
++    @Test(groups = {"smoke"} , priority = 1)
+     public void verifySearchWithValidProduct() throws IOException {
+         LandingPage landingPage = launchApplication();
+         landingPage.searchProduct("Ps5");
+@@ -22,7 +22,7 @@
+ 
+ 
+ 
+-    @Test(groups = {"smoke", "production"}, priority = 2)
++    @Test(groups = {"smoke"}, priority = 2)
+     public void verifySearchWithInvalidProduct() throws IOException {
+         LandingPage landingPage = launchApplication();
+         landingPage.searchProduct("XYZ123NonExistent");
+Index: src/test/java/kagishomangaba/runners/TestRunnerTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package kagishomangaba.runners;\r\n\r\nimport io.cucumber.testng.AbstractTestNGCucumberTests;\r\nimport io.cucumber.testng.CucumberOptions;\r\nimport kagishomangaba.TestComponents.Retry;\r\nimport org.testng.annotations.Test;\r\n\r\n@CucumberOptions(\r\n        features = \"src/test/java/kagishomangaba/resources/features\",\r\n        glue = \"kagishomangaba.steps\",\r\n        monochrome = true,\r\n\r\n        plugin = {\"pretty\", \"html:target/cucumber.html\"}\r\n)\r\n\r\npublic class TestRunnerTest extends AbstractTestNGCucumberTests {\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/kagishomangaba/runners/TestRunnerTest.java b/src/test/java/kagishomangaba/runners/TestRunnerTest.java
+--- a/src/test/java/kagishomangaba/runners/TestRunnerTest.java	
++++ b/src/test/java/kagishomangaba/runners/TestRunnerTest.java	
+@@ -6,7 +6,7 @@
+ import org.testng.annotations.Test;
+ 
+ @CucumberOptions(
+-        features = "src/test/java/kagishomangaba/resources/features",
++        features = "src/test/java/resources/features",
+         glue = "kagishomangaba.steps",
+         monochrome = true,
+ 
+Index: src/test/java/kagishomangaba/tests/regression/CartTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/kagishomangaba/tests/regression/CartTests.java b/src/test/java/kagishomangaba/tests/regression/CartTests.java
+deleted file mode 100644
+--- a/src/test/java/kagishomangaba/tests/regression/CartTests.java	
++++ /dev/null	
+@@ -1,4 +0,0 @@
+-package kagishomangaba.tests.regression;
+-
+-public class CartTests {
+-}
+Index: src/main/java/kagishomangaba/utilities/ExtentReportUtil.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package kagishomangaba.utilities;\r\n\r\nimport com.aventstack.extentreports.ExtentReports;\r\nimport com.aventstack.extentreports.reporter.ExtentSparkReporter;\r\n\r\npublic class ExtentReportUtil {\r\n\r\n    public static ExtentReports getReportObject() {\r\n\r\n        String path = System.getProperty(\"user.dir\") + \"//reports//index.html\";\r\n        ExtentSparkReporter spark = new ExtentSparkReporter(\"ExtentReport.html\");\r\n        ExtentSparkReporter reporter = new ExtentSparkReporter(path);\r\n        reporter.config().setReportName(\"Web Automation Results\");\r\n        reporter.config().setDocumentTitle(\"Test Results\");\r\n\r\n        ExtentReports extent = new ExtentReports();\r\n        extent.attachReporter(reporter);\r\n        extent.setSystemInfo(\"Tester\" , \"Kagisho Mangaba\");\r\n        extent.createTest(path);\r\n        return extent;\r\n\r\n\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/kagishomangaba/utilities/ExtentReportUtil.java b/src/main/java/kagishomangaba/utilities/ExtentReportUtil.java
+--- a/src/main/java/kagishomangaba/utilities/ExtentReportUtil.java	
++++ b/src/main/java/kagishomangaba/utilities/ExtentReportUtil.java	
+@@ -5,6 +5,7 @@
+ 
+ public class ExtentReportUtil {
+ 
++
+     public static ExtentReports getReportObject() {
+ 
+         String path = System.getProperty("user.dir") + "//reports//index.html";

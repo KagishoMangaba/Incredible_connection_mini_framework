@@ -1,0 +1,647 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d9698905-9a46-4dd4-b19a-5b6b3715c8be\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/kagishomangaba/base/AbstractComponents.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/kagishomangaba/base/BasePage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/kagishomangaba/managers/BrowserManager.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/kagishomangaba/pages/CataloguePage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/kagishomangaba/pages/CataloguePage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/kagishomangaba/pages/LandingPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/kagishomangaba/pages/LandingPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/runners/TestRunnerTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/runners/TestRunnerTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/tests/BaseScript.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/tests/ErrorValidations.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/tests/OrderTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTests.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTests.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"371EPEJFxn3v71q37UpVwLqvQ4q\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.BaseScript.executor&quot;: &quot;Run&quot;,\r\n    &quot;Application.OrderTest.executor&quot;: &quot;Run&quot;,\r\n    &quot;Application.kagishomangaba.tests.OrderTest.executor&quot;: &quot;Run&quot;,\r\n    &quot;Cucumber Java.Feature: CartVerification.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;TestNG.C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_regression.xml.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_smoke.xml.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.ErrorValidations.ProductMisMatch.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.ErrorValidations.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTest (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTest (2).executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTest.SubmitOrder.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTest.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTest.submitOrder.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTest.submitOrderTest.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTests.OrderNo2.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTests.completeOrderFlow.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTests.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.OrderTests.orderMultipleProducts.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.SearchTests.verifySearchWithInvalidProduct.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.SearchTests.verifySearchWithValidProduct.executor&quot;: &quot;Run&quot;,\r\n    &quot;TestNG.TestRunnerTest.executor&quot;: &quot;Run&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\ogkag\\IdeaProjects\\incredible_connection_automation_framework\\testSuites\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Cucumber Java.Feature: CartVerification\">\r\n    <configuration name=\"Feature: CartVerification\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/java/kagishomangaba/features/CartVerification.feature\" />\r\n      <option name=\"GLUE\" value=\"kagishomangaba.steps\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"incredible_connection_automation_framework\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: CartVerification\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_regression.xml\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"incredible_connection_automation_framework\" />\r\n      <option name=\"SUITE_NAME\" value=\"$PROJECT_DIR$/testSuites/testng_regression.xml\" />\r\n      <option name=\"TEST_OBJECT\" value=\"SUITE\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"OrderTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"incredible_connection_automation_framework\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"kagishomangaba.tests.regression.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"kagishomangaba.tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"kagishomangaba.tests.regression.OrderTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"OrderTests.completeOrderFlow\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"incredible_connection_automation_framework\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"kagishomangaba.tests.regression.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"kagishomangaba.tests.regression\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"kagishomangaba.tests.regression.OrderTests\" />\r\n      <option name=\"METHOD_NAME\" value=\"completeOrderFlow\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestRunnerTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"incredible_connection_automation_framework\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"kagishomangaba.runners.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"kagishomangaba.runners\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"kagishomangaba.runners.TestRunnerTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.OrderTests.completeOrderFlow\" />\r\n        <item itemvalue=\"TestNG.TestRunnerTest\" />\r\n        <item itemvalue=\"Cucumber Java.Feature: CartVerification\" />\r\n        <item itemvalue=\"TestNG.C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_regression.xml\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d9698905-9a46-4dd4-b19a-5b6b3715c8be\" name=\"Changes\" comment=\"\" />\r\n      <created>1766062154551</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1766062154551</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -6,17 +6,15 @@
+   <component name="ChangeListManager">
+     <list default="true" id="d9698905-9a46-4dd4-b19a-5b6b3715c8be" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/base/AbstractComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/base/BasePage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/managers/BrowserManager.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/CataloguePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/CataloguePage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/LandingPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/pages/ShoppingCartPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ExtentReportUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/utilities/ExtentReportUtil.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/resources/features/CartVerification.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/features/CartVerification.feature" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/runners/TestRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/runners/TestRunnerTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/BaseScript.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/ErrorValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTests.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/CartTests.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/OrderTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/smoke/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/smoke/SearchTests.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -32,6 +30,9 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 0
+@@ -68,17 +69,18 @@
+     &quot;TestNG.SearchTests.verifySearchWithInvalidProduct.executor&quot;: &quot;Run&quot;,
+     &quot;TestNG.SearchTests.verifySearchWithValidProduct.executor&quot;: &quot;Run&quot;,
+     &quot;TestNG.TestRunnerTest.executor&quot;: &quot;Run&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;docker__jenkins__setup&quot;,
+     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+   }
+ }</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework\src\test\java\resources\features" />
+       <recent name="C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework\testSuites" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Cucumber Java.Feature: CartVerification">
++  <component name="RunManager" selected="TestNG.TestRunnerTest">
+     <configuration name="Feature: CartVerification" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+       <option name="CUCUMBER_CORE_VERSION" value="5" />
+       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/kagishomangaba/features/CartVerification.feature" />
+@@ -112,12 +114,12 @@
+       <module name="incredible_connection_automation_framework" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="kagishomangaba.tests.regression.*" />
++          <option name="PATTERN" value="kagishomangaba.tests.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="kagishomangaba.tests" />
+-      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.regression.OrderTest" />
++      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.OrderTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -129,7 +131,7 @@
+       <module name="incredible_connection_automation_framework" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="kagishomangaba.tests.regression.*" />
++          <option name="PATTERN" value="kagishomangaba.tests.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -162,8 +164,8 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="TestNG.TestRunnerTest" />
+         <item itemvalue="TestNG.OrderTests.completeOrderFlow" />
+-        <item itemvalue="TestNG.TestRunnerTest" />
+         <item itemvalue="Cucumber Java.Feature: CartVerification" />
+         <item itemvalue="TestNG.C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_regression.xml" />
+       </list>
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.example</groupId>\r\n    <artifactId>incredible_connection_automation_framework</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>21</maven.compiler.source>\r\n        <maven.compiler.target>21</maven.compiler.target>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n    </properties>\r\n\r\n\r\n    <dependencies>\r\n\r\n        <dependency>\r\n            <groupId>org.seleniumhq.selenium</groupId>\r\n            <artifactId>selenium-java</artifactId>\r\n            <version>4.35.0</version>\r\n        </dependency>\r\n\r\n        <!-- WebDriverManager -->\r\n        <dependency>\r\n            <groupId>io.github.bonigarcia</groupId>\r\n            <artifactId>webdrivermanager</artifactId>\r\n            <version>6.3.2</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.testng/testng -->\r\n        <dependency>\r\n            <groupId>org.testng</groupId>\r\n            <artifactId>testng</artifactId>\r\n            <version>7.11.0</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->\r\n        <dependency>\r\n            <groupId>com.fasterxml.jackson.core</groupId>\r\n            <artifactId>jackson-databind</artifactId>\r\n            <version>2.20.1</version>\r\n        </dependency>\r\n        <!-- ExtentReports -->\r\n        <dependency>\r\n            <groupId>com.aventstack</groupId>\r\n            <artifactId>extentreports</artifactId>\r\n            <version>5.1.2</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->\r\n        <dependency>\r\n            <groupId>io.cucumber</groupId>\r\n            <artifactId>cucumber-java</artifactId>\r\n            <version>7.32.0</version>\r\n        </dependency>\r\n        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->\r\n        <dependency>\r\n            <groupId>io.cucumber</groupId>\r\n            <artifactId>cucumber-testng</artifactId>\r\n            <version>7.32.0</version>\r\n        </dependency>\r\n        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->\r\n        <dependency>\r\n            <groupId>org.apache.logging.log4j</groupId>\r\n            <artifactId>log4j-core</artifactId>\r\n            <version>3.0.0-beta3</version>\r\n        </dependency>\r\n        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->\r\n        <dependency>\r\n            <groupId>org.apache.logging.log4j</groupId>\r\n            <artifactId>log4j-api</artifactId>\r\n            <version>3.0.0-beta2</version>\r\n        </dependency>\r\n\r\n    </dependencies>\r\n\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	
+@@ -77,4 +77,72 @@
+ 
+     </dependencies>
+ 
++
++    <profiles>
++        <profile>
++            <id>Regression</id>
++            <build>
++                <plugins>
++                    <plugin>
++                        <groupId>org.apache.maven.plugins</groupId>
++                        <artifactId>maven-surefire-plugin</artifactId>
++                        <version>3.1.2</version>
++                        <configuration>
++                            <suiteXmlFiles>
++                                <suiteXmlFile>testSuites/testng_regression.xml</suiteXmlFile>
++                            </suiteXmlFiles>
++                        </configuration>
++                    </plugin>
++                </plugins>
++            </build>
++        </profile>
++
++        <profile>
++            <id>Smoke</id>
++            <build>
++                <plugins>
++                    <plugin>
++                        <groupId>org.apache.maven.plugins</groupId>
++                        <artifactId>maven-surefire-plugin</artifactId>
++                        <version>3.1.2</version>
++                        <configuration>
++                            <suiteXmlFiles>
++                                <suiteXmlFile>testSuites/testng_smoke.xml</suiteXmlFile>
++                            </suiteXmlFiles>
++                        </configuration>
++                    </plugin>
++                </plugins>
++            </build>
++        </profile>
++
++    </profiles>
++
++    <build>
++        <plugins>
++            <!-- Compiler plugin -->
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.11.0</version>
++                <configuration>
++                    <source>${maven.compiler.source}</source>
++                    <target>${maven.compiler.target}</target>
++                </configuration>
++            </plugin>
++
++            <!-- Default Surefire plugin (for when no profile is used) -->
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-surefire-plugin</artifactId>
++                <version>3.1.2</version>
++                <configuration>
++                    <suiteXmlFiles>
++                        <suiteXmlFile>testSuites/testng.xml</suiteXmlFile>
++                    </suiteXmlFiles>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++
+ </project>
+\ No newline at end of file
+Index: reports/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta charset=\"UTF-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n<title>Test Results</title>\r\n<link rel=\"apple-touch-icon\" href=\"https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png\">\r\n<link rel=\"shortcut icon\" href=\"https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png\">\r\n<link href=\"https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css\" rel=\"stylesheet\" />\r\n<link href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\">\r\n<script src=\"https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js\"></script>\r\n<style type=\"text/css\"></style></head><body class=\"spa -report standard\">\r\n  <div class=\"app\">\r\n    <div class=\"layout\">\r\n<div class=\"header navbar\">\r\n<div class=\"vheader\">\r\n<div class=\"nav-logo\">\r\n<a href=\"#\">\r\n<div class=\"logo\" style=\"background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')\"></div>\r\n</a>\r\n</div>\r\n<ul class=\"nav-left\">\r\n<li class=\"search-box\">\r\n<a class=\"search-toggle\" href=\"#\">\r\n<i class=\"search-icon fa fa-search\"></i>\r\n<i class=\"search-icon-close fa fa-close\"></i>\r\n</a>\r\n</li>\r\n<li class=\"search-input\"><input id=\"search-tests\" class=\"form-control\" type=\"text\" placeholder=\"Search...\"></li>\r\n</ul>\r\n<ul class=\"nav-right\">\r\n<li class=\"m-r-10\">\r\n<a href=\"#\"><span class=\"badge badge-primary\">Web Automation Results</span></a>\r\n</li>\r\n<li class=\"m-r-10\">\r\n<a href=\"#\"><span class=\"badge badge-primary\">Dec 23, 2025 05:20:02 pm</span></a>\r\n</li>\r\n</ul>\r\n</div>\r\n</div><div class=\"side-nav\">\r\n<div class=\"side-nav-inner\">\r\n<ul class=\"side-nav-menu\">\r\n<li class=\"nav-item dropdown\" onclick=\"toggleView('test-view')\">\r\n<a id=\"nav-test\" class=\"dropdown-toggle\" href=\"#\">\r\n<span class=\"ico\"><i class=\"fa fa-list\"></i></span>\r\n</a>\r\n</li>\r\n<li class=\"nav-item dropdown\" onclick=\"toggleView('exception-view')\">\r\n<a id=\"nav-exception\" class=\"dropdown-toggle\" href=\"#\">\r\n<span class=\"ico\"><i class=\"fa fa-bug\"></i></span>\r\n</a>\r\n</li>\r\n<li class=\"nav-item dropdown\" onclick=\"toggleView('dashboard-view')\">\r\n<a id=\"nav-dashboard\" class=\"dropdown-toggle\" href=\"#\">\r\n<span class=\"ico\"><i class=\"fa fa-bar-chart\"></i></span>\r\n</a>\r\n</li>\r\n</ul>\r\n</div>\r\n</div>      <div class=\"vcontainer\">\r\n        <div class=\"main-content\">\r\n<div class=\"test-wrapper row view test-view\">\r\n  <div class=\"test-list\">\r\n    <div class=\"test-list-tools\">\r\n<ul class=\"tools pull-left\">\r\n<li><a href=\"#\"><span class=\"font-size-14\">Tests</span></a></li>\r\n</ul>\r\n<ul class=\"tools text-right\">\r\n<li class=\"dropdown\">\r\n<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-exclamation-circle\"></i></a>\r\n<ul id=\"status-toggle\" class=\"dropdown-menu dropdown-md p-v-0\">\r\n<a class=\"dropdown-item\" status=\"pass\" href=\"#\"><span>Pass</span><span class=\"status success\"></span></a>\r\n<a class=\"dropdown-item\" status=\"fail\" href=\"#\"><span>Fail</span><span class=\"status danger\"></span></a>\r\n<div class=\"dropdown-divider\"></div>\r\n<a status=\"clear\" class=\"dropdown-item\" href=\"#\"><span>Clear</span><span class=\"pull-right\"><i class=\"fa fa-close\"></i></span></a>\r\n</ul>\r\n</li>\r\n</ul>\r\n</div>    <div class=\"test-list-wrapper scrollable\">\r\n      <ul class=\"test-list-item\">\r\n        <li class=\"test-item\"  status=\"pass\" test-id=\"1\"\r\n          author=\"\"\r\n          tag=\"\"\r\n          device=\"\">\r\n          <div class=\"test-detail\">\r\n            <p class=\"name\">C:\\Users\\ogkag\\IdeaProjects\\incredible_connection_automation_framework//reports//index.html</p>\r\n            <p class=\"text-sm\">\r\n              <span>17:20:02</span> / <span>00:00:00:000</span>\r\n              <span class=\"badge pass-bg log float-right\">Pass</span>\r\n            </p>\r\n          </div>\r\n          <div class=\"test-contents d-none\">\r\n<div class=\"detail-head\">\r\n<div class=\"p-v-10\">\r\n<div class=\"info\">\r\n<h5 class=\"test-status text-pass\">C:\\Users\\ogkag\\IdeaProjects\\incredible_connection_automation_framework//reports//index.html</h5>\r\n<span class='badge badge-success'>12.23.2025 17:20:02</span>\r\n<span class='badge badge-danger'>12.23.2025 17:20:02</span>\r\n<span class='badge badge-default'>00:00:00:000</span>\r\n&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>\r\n<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class=\"fa fa-fast-forward\"></i></span>\r\n<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class=\"fa fa-compress\"></i></span>\r\n<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class=\"fa fa-expand\"></i></span>\r\n</div>\r\n</div>\r\n</div>          </div>\r\n        </li>\r\n        <li class=\"test-item\"  status=\"fail\" test-id=\"2\"\r\n          author=\"\"\r\n          tag=\"\"\r\n          device=\"\">\r\n          <div class=\"test-detail\">\r\n            <p class=\"name\">completeOrderFlow</p>\r\n            <p class=\"text-sm\">\r\n              <span>17:20:07</span> / <span>00:00:13:098</span>\r\n              <span class=\"badge fail-bg log float-right\">Fail</span>\r\n            </p>\r\n          </div>\r\n          <div class=\"test-contents d-none\">\r\n<div class=\"detail-head\">\r\n<div class=\"p-v-10\">\r\n<div class=\"info\">\r\n<h5 class=\"test-status text-fail\">completeOrderFlow</h5>\r\n<span class='badge badge-success'>12.23.2025 17:20:07</span>\r\n<span class='badge badge-danger'>12.23.2025 17:20:20</span>\r\n<span class='badge badge-default'>00:00:13:098</span>\r\n&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>\r\n<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class=\"fa fa-fast-forward\"></i></span>\r\n<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class=\"fa fa-compress\"></i></span>\r\n<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class=\"fa fa-expand\"></i></span>\r\n</div>\r\n</div>\r\n</div>    <div class=\"row mb-3\"><div class=\"col-md-3\">\r\n    \r\n\r\n<img data-featherlight='C:\\Users\\ogkag\\IdeaProjects\\incredible_connection_automation_framework\\reports\\completeOrderFlow.png' src=\"C:\\Users\\ogkag\\IdeaProjects\\incredible_connection_automation_framework\\reports\\completeOrderFlow.png\">\r\n  \r\n    <div class=\"title\">completeOrderFlow</div>\r\n\r\n    </div></div>\r\n<div class=\"detail-body mt-4\">\r\n<table class=\"table table-sm\">\r\n  <thead><tr><th class=\"status-col\">Status</th><th class=\"timestamp-col\">Timestamp</th><th class=\"details-col\">Details</th></tr></thead>\r\n  <tbody>\r\n      <tr class=\"event-row\">\r\n        <td><span class=\"badge log fail-bg\">Fail</span></td>\r\n        <td>17:20:20</td>\r\n        <td>\r\n          <textarea readonly class=\"code-block\">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type=\"submit\" title=\"Add to Cart\" class=\"action tocart\">...</button> is not clickable at point (450, 623). Other element would receive the click: <div role=\"document\" class=\"content\" tabindex=\"0\">...</div>\r\n  (Session info: chrome=143.0.7499.169)\r\nBuild info: version: '4.35.0', revision: '1c58e5028b'\r\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'\r\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\nCommand: [7c90440bfd8b0479fe12b09a125fcde8, clickElement {id=f.7B51DC705D1F659CB10E53BBDD156866.d.BDE0A51B402D82B309A5898BA7081895.e.1548}]\r\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.169, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\\Users\\ogkag\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53107}, goog:processID: 11376, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53107/devtoo..., se:cdpVersion: 143.0.7499.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\r\nElement: [[[[ChromeDriver: chrome on windows (7c90440bfd8b0479fe12b09a125fcde8)] -> css selector: .product-item-info]] -> css selector: .actions-primary button]\r\nSession ID: 7c90440bfd8b0479fe12b09a125fcde8\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)\r\n\tat kagishomangaba.pages.CataloguePage.addProductToCart(CataloguePage.java:82)\r\n\tat kagishomangaba.tests.regression.OrderTests.completeOrderFlow(OrderTests.java:23)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:741)\r\n\tat org.testng.TestRunner.run(TestRunner.java:616)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:421)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:312)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1208)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1112)\r\n\tat org.testng.TestNG.run(TestNG.java:1079)\r\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)\r\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)\r\n</textarea>\r\n          \r\n        </td>\r\n      </tr>\r\n  </tbody>\r\n</table>\r\n</div>\r\n          </div>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n<div class=\"test-content scrollable\">\r\n<div class=\"test-content-tools\">\r\n<ul><li><a class=\"back-to-test\" href=\"#\"><i class=\"fa fa-arrow-left\"></i></a></li></ul>\r\n</div>\r\n<div class=\"test-content-detail\"><div class=\"detail-body\"></div></div>\r\n</div></div>\r\n<div class=\"test-wrapper row view exception-view attributes-view\">\r\n<div class=\"test-list\">\r\n<div class=\"test-list-tools\">\r\n<ul class=\"tools pull-left\"><li><a href=\"\"><span class=\"font-size-14\">Exception</span></a></li></ul>\r\n<ul class=\"tools text-right\"><li><a href=\"#\"><span class=\"badge badge-primary\">1</span></a></li></ul>\r\n</div>\r\n<div class=\"test-list-wrapper scrollable\">\r\n<ul class=\"test-list-item\">\r\n<li class=\"test-item\">\r\n<div class=\"test-detail\">\r\n<span class=\"meta\">\r\n<span class='badge log badge-danger'>1</span>\r\n</span>\r\n<p class=\"name\">org.openqa.selenium.ElementClickInterceptedException</p>\r\n<p class=\"duration text-sm\">1 tests</p>\r\n</div>\r\n<div class=\"test-contents d-none\">\r\n<div class=\"info\">\r\n<h4>org.openqa.selenium.ElementClickInterceptedException</h4>\r\n<span status=\"fail\" class='badge log badge-danger'>1 failed</span>\r\n</div>\r\n<table class='table table-sm mt-4'>\r\n<thead>\r\n<tr>\r\n<th class=\"status-col\">Status</th>\r\n<th class=\"timestamp-col\">Timestamp</th>\r\n<th>TestName</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr class=\"tag-test-status\" status=\"fail\">\r\n<td><span class=\"badge log fail-bg\">Fail</span></td>\r\n<td>17:20:07 pm</td>\r\n<td>\r\n<a href=\"#\" class=\"linked\" test-id='2' id='2'>completeOrderFlow</a>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n</li>\r\n</ul>\r\n</div>\r\n</div>\r\n<div class=\"test-content scrollable\">\r\n<div class=\"test-content-detail\">\r\n<div class=\"detail-body\"></div>\r\n</div>\r\n</div>\r\n</div><div class=\"container-fluid p-4 view dashboard-view\">\r\n<div class=\"row\">\r\n<div class=\"col-md-3\">\r\n<div class=\"card\"><div class=\"card-body\">\r\n<p class=\"m-b-0\">Started</p>\r\n<h3>Dec 23, 2025 05:20:02 pm</h3>\r\n</div></div>\r\n</div>\r\n<div class=\"col-md-3\">\r\n<div class=\"card\"><div class=\"card-body\">\r\n<p class=\"m-b-0\">Ended</p>\r\n<h3>Dec 23, 2025 05:20:20 pm</h3>\r\n</div></div>\r\n</div>\r\n<div class=\"col-md-3\">\r\n<div class=\"card\"><div class=\"card-body\">\r\n<p class=\"m-b-0 text-pass\">Tests Passed</p>\r\n<h3>1</h3>\r\n</div></div>\r\n</div>\r\n<div class=\"col-md-3\">\r\n<div class=\"card\"><div class=\"card-body\">\r\n<p class=\"m-b-0 text-fail\">Tests Failed</p>\r\n<h3>1</h3>\r\n</div></div>\r\n</div>\r\n</div>\r\n<div class=\"row\">\r\n<div class=\"col-md-6\">\r\n<div class=\"card\">\r\n<div class=\"card-header\">\r\n<h6 class=\"card-title\">Tests</h6>\r\n</div>\r\n<div class=\"card-body\">\r\n<div class=\"\">\r\n<canvas id='parent-analysis' width='115' height='90'></canvas>\r\n</div>\r\n</div>\r\n<div class=\"card-footer\">\r\n<div><small data-tooltip='50%'>\r\n<b>1</b> tests passed\r\n</small>\r\n</div>\r\n<div>\r\n<small data-tooltip='50%'><b>1</b> tests failed,\r\n<b>0</b> skipped, <b data-tooltip='0%'>0</b> others\r\n</small>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"col-md-6\">\r\n<div class=\"card\">\r\n<div class=\"card-header\">\r\n<h6 class=\"card-title\">Log events</h6>\r\n</div>\r\n<div class=\"card-body\">\r\n<div class=\"\">\r\n<canvas id='events-analysis' width='115' height='90'></canvas>\r\n</div>\r\n</div>\r\n<div class=\"card-footer\">\r\n<div><small data-tooltip='0%'><b>0</b> events passed</small></div>\r\n<div>\r\n<small data-tooltip='100%'><b>1</b> events failed,\r\n<b data-tooltip='%'>0</b> others\r\n</small>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"row\"><div class=\"col-md-12\">\r\n<div class=\"card\"><div class=\"card-header\"><p>Timeline</p></div>\r\n<div class=\"card-body pt-0\"><div>\r\n<canvas id=\"timeline\" height=\"120\"></canvas>\r\n</div></div>\r\n</div>\r\n</div></div>\r\n<script>\r\nvar timeline = {\r\n\"C:\\Users\\ogkag\\IdeaProjects\\incredible_connection_automation_framework//reports//index.html\":0,\"completeOrderFlow\":13.098\r\n};\r\n</script>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-12 sysenv-container\">\r\n<div class=\"card\">\r\n<div class=\"card-header\"><p>System/Environment</p></div>\r\n<div class=\"card-body pb-0 pt-0\"><table class=\"table table-sm table-bordered\">\r\n<thead><tr class=\"bg-gray\"><th>Name</th><th>Value</th></tr></thead>\r\n<tbody>\r\n<tr>\r\n<td>Tester</td>\r\n<td>Kagisho Mangaba</td>\r\n</tr>\r\n</tbody>\r\n</table></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<script>\r\nvar statusGroup = {\r\nparentCount: 5,\r\npassParent: 1,\r\nfailParent: 1,\r\nwarningParent: 0,\r\nskipParent: 0,\r\nchildCount: 5,\r\npassChild: 0,\r\nfailChild: 0,\r\nwarningChild: 0,\r\nskipChild: 0,\r\ninfoChild: 0,\r\ngrandChildCount: 5,\r\npassGrandChild: 0,\r\nfailGrandChild: 0,\r\nwarningGrandChild: 0,\r\nskipGrandChild: 0,\r\ninfoGrandChild: 0,\r\neventsCount: 5,\r\npassEvents: 0,\r\nfailEvents: 1,\r\nwarningEvents: 0,\r\nskipEvents: 0,\r\ninfoEvents: 0\r\n};\r\n</script>        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n<script src=\"https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js\"></script>\r\n<script type=\"text/javascript\"></script></body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/reports/index.html b/reports/index.html
+--- a/reports/index.html	
++++ b/reports/index.html	
+@@ -35,7 +35,7 @@
+ <a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
+ </li>
+ <li class="m-r-10">
+-<a href="#"><span class="badge badge-primary">Dec 23, 2025 05:20:02 pm</span></a>
++<a href="#"><span class="badge badge-primary">Dec 26, 2025 05:14:47 pm</span></a>
+ </li>
+ </ul>
+ </div>
+@@ -45,11 +45,6 @@
+ <li class="nav-item dropdown" onclick="toggleView('test-view')">
+ <a id="nav-test" class="dropdown-toggle" href="#">
+ <span class="ico"><i class="fa fa-list"></i></span>
+-</a>
+-</li>
+-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+-<a id="nav-exception" class="dropdown-toggle" href="#">
+-<span class="ico"><i class="fa fa-bug"></i></span>
+ </a>
+ </li>
+ <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+@@ -72,7 +67,6 @@
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+ <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+ <div class="dropdown-divider"></div>
+ <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+ </ul>
+@@ -87,7 +81,7 @@
+           <div class="test-detail">
+             <p class="name">C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework//reports//index.html</p>
+             <p class="text-sm">
+-              <span>17:20:02</span> / <span>00:00:00:000</span>
++              <span>17:14:47</span> / <span>00:00:00:000</span>
+               <span class="badge pass-bg log float-right">Pass</span>
+             </p>
+           </div>
+@@ -96,8 +90,8 @@
+ <div class="p-v-10">
+ <div class="info">
+ <h5 class="test-status text-pass">C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework//reports//index.html</h5>
+-<span class='badge badge-success'>12.23.2025 17:20:02</span>
+-<span class='badge badge-danger'>12.23.2025 17:20:02</span>
++<span class='badge badge-success'>12.26.2025 17:14:47</span>
++<span class='badge badge-danger'>12.26.2025 17:14:47</span>
+ <span class='badge badge-default'>00:00:00:000</span>
+ &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+ <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+@@ -107,97 +101,40 @@
+ </div>
+ </div>          </div>
+         </li>
+-        <li class="test-item"  status="fail" test-id="2"
++        <li class="test-item"  status="pass" test-id="2"
+           author=""
+           tag=""
+           device="">
+           <div class="test-detail">
+-            <p class="name">completeOrderFlow</p>
++            <p class="name">ProductMisMatch</p>
+             <p class="text-sm">
+-              <span>17:20:07</span> / <span>00:00:13:098</span>
+-              <span class="badge fail-bg log float-right">Fail</span>
++              <span>17:14:49</span> / <span>00:00:40:343</span>
++              <span class="badge pass-bg log float-right">Pass</span>
+             </p>
+           </div>
+           <div class="test-contents d-none">
+ <div class="detail-head">
+ <div class="p-v-10">
+ <div class="info">
+-<h5 class="test-status text-fail">completeOrderFlow</h5>
+-<span class='badge badge-success'>12.23.2025 17:20:07</span>
+-<span class='badge badge-danger'>12.23.2025 17:20:20</span>
+-<span class='badge badge-default'>00:00:13:098</span>
++<h5 class="test-status text-pass">ProductMisMatch</h5>
++<span class='badge badge-success'>12.26.2025 17:14:49</span>
++<span class='badge badge-danger'>12.26.2025 17:15:29</span>
++<span class='badge badge-default'>00:00:40:343</span>
+ &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+ <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+ <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+ <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+ </div>
+ </div>
+-</div>    <div class="row mb-3"><div class="col-md-3">
+-    
+-
+-<img data-featherlight='C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework\reports\completeOrderFlow.png' src="C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework\reports\completeOrderFlow.png">
+-  
+-    <div class="title">completeOrderFlow</div>
+-
+-    </div></div>
+-<div class="detail-body mt-4">
++</div><div class="detail-body mt-4">
+ <table class="table table-sm">
+   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+   <tbody>
+       <tr class="event-row">
+-        <td><span class="badge log fail-bg">Fail</span></td>
+-        <td>17:20:20</td>
++        <td><span class="badge log pass-bg">Pass</span></td>
++        <td>17:15:29</td>
+         <td>
+-          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" title="Add to Cart" class="action tocart">...</button> is not clickable at point (450, 623). Other element would receive the click: <div role="document" class="content" tabindex="0">...</div>
+-  (Session info: chrome=143.0.7499.169)
+-Build info: version: '4.35.0', revision: '1c58e5028b'
+-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+-Driver info: org.openqa.selenium.chrome.ChromeDriver
+-Command: [7c90440bfd8b0479fe12b09a125fcde8, clickElement {id=f.7B51DC705D1F659CB10E53BBDD156866.d.BDE0A51B402D82B309A5898BA7081895.e.1548}]
+-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.169, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\ogkag\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53107}, goog:processID: 11376, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53107/devtoo..., se:cdpVersion: 143.0.7499.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+-Element: [[[[ChromeDriver: chrome on windows (7c90440bfd8b0479fe12b09a125fcde8)] -> css selector: .product-item-info]] -> css selector: .actions-primary button]
+-Session ID: 7c90440bfd8b0479fe12b09a125fcde8
+-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+-	at kagishomangaba.pages.CataloguePage.addProductToCart(CataloguePage.java:82)
+-	at kagishomangaba.tests.regression.OrderTests.completeOrderFlow(OrderTests.java:23)
+-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+-	at org.testng.TestRunner.run(TestRunner.java:616)
+-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+-	at org.testng.TestNG.runSuites(TestNG.java:1112)
+-	at org.testng.TestNG.run(TestNG.java:1079)
+-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+-</textarea>
+-          
++          Test Passed
+         </td>
+       </tr>
+   </tbody>
+@@ -205,88 +142,162 @@
+ </div>
+           </div>
+         </li>
+-      </ul>
+-    </div>
+-  </div>
+-<div class="test-content scrollable">
+-<div class="test-content-tools">
+-<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
++        <li class="test-item"  status="pass" test-id="3"
++          author=""
++          tag=""
++          device="">
++          <div class="test-detail">
++            <p class="name">submitOrder</p>
++            <p class="text-sm">
++              <span>17:15:31</span> / <span>00:00:41:009</span>
++              <span class="badge pass-bg log float-right">Pass</span>
++            </p>
++          </div>
++          <div class="test-contents d-none">
++<div class="detail-head">
++<div class="p-v-10">
++<div class="info">
++<h5 class="test-status text-pass">submitOrder</h5>
++<span class='badge badge-success'>12.26.2025 17:15:31</span>
++<span class='badge badge-danger'>12.26.2025 17:16:12</span>
++<span class='badge badge-default'>00:00:41:009</span>
++&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
++<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
++<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
++<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
++</div>
+ </div>
+-<div class="test-content-detail"><div class="detail-body"></div></div>
+-</div></div>
+-<div class="test-wrapper row view exception-view attributes-view">
+-<div class="test-list">
+-<div class="test-list-tools">
+-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
++</div><div class="detail-body mt-4">
++<table class="table table-sm">
++  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
++  <tbody>
++      <tr class="event-row">
++        <td><span class="badge log pass-bg">Pass</span></td>
++        <td>17:16:12</td>
++        <td>
++          Test Passed
++        </td>
++      </tr>
++  </tbody>
++</table>
+ </div>
+-<div class="test-list-wrapper scrollable">
+-<ul class="test-list-item">
+-<li class="test-item">
+-<div class="test-detail">
+-<span class="meta">
+-<span class='badge log badge-danger'>1</span>
+-</span>
+-<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+-<p class="duration text-sm">1 tests</p>
+-</div>
+-<div class="test-contents d-none">
++          </div>
++        </li>
++        <li class="test-item"  status="pass" test-id="4"
++          author=""
++          tag=""
++          device="">
++          <div class="test-detail">
++            <p class="name">submitOrder</p>
++            <p class="text-sm">
++              <span>17:16:13</span> / <span>00:00:54:032</span>
++              <span class="badge pass-bg log float-right">Pass</span>
++            </p>
++          </div>
++          <div class="test-contents d-none">
++<div class="detail-head">
++<div class="p-v-10">
+ <div class="info">
+-<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+-<span status="fail" class='badge log badge-danger'>1 failed</span>
++<h5 class="test-status text-pass">submitOrder</h5>
++<span class='badge badge-success'>12.26.2025 17:16:13</span>
++<span class='badge badge-danger'>12.26.2025 17:17:07</span>
++<span class='badge badge-default'>00:00:54:032</span>
++&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
++<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
++<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
++<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
++</div>
+ </div>
+-<table class='table table-sm mt-4'>
+-<thead>
+-<tr>
+-<th class="status-col">Status</th>
+-<th class="timestamp-col">Timestamp</th>
+-<th>TestName</th>
+-</tr>
+-</thead>
+-<tbody>
+-<tr class="tag-test-status" status="fail">
+-<td><span class="badge log fail-bg">Fail</span></td>
+-<td>17:20:07 pm</td>
+-<td>
+-<a href="#" class="linked" test-id='2' id='2'>completeOrderFlow</a>
+-</td>
+-</tr>
+-</tbody>
++</div><div class="detail-body mt-4">
++<table class="table table-sm">
++  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
++  <tbody>
++      <tr class="event-row">
++        <td><span class="badge log pass-bg">Pass</span></td>
++        <td>17:17:07</td>
++        <td>
++          Test Passed
++        </td>
++      </tr>
++  </tbody>
++</table>
++</div>
++          </div>
++        </li>
++        <li class="test-item"  status="pass" test-id="5"
++          author=""
++          tag=""
++          device="">
++          <div class="test-detail">
++            <p class="name">completeOrderFlow</p>
++            <p class="text-sm">
++              <span>17:17:08</span> / <span>00:00:42:726</span>
++              <span class="badge pass-bg log float-right">Pass</span>
++            </p>
++          </div>
++          <div class="test-contents d-none">
++<div class="detail-head">
++<div class="p-v-10">
++<div class="info">
++<h5 class="test-status text-pass">completeOrderFlow</h5>
++<span class='badge badge-success'>12.26.2025 17:17:08</span>
++<span class='badge badge-danger'>12.26.2025 17:17:51</span>
++<span class='badge badge-default'>00:00:42:726</span>
++&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
++<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
++<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
++<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
++</div>
++</div>
++</div><div class="detail-body mt-4">
++<table class="table table-sm">
++  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
++  <tbody>
++      <tr class="event-row">
++        <td><span class="badge log pass-bg">Pass</span></td>
++        <td>17:17:51</td>
++        <td>
++          Test Passed
++        </td>
++      </tr>
++  </tbody>
+ </table>
+ </div>
+-</li>
+-</ul>
+-</div>
+-</div>
++          </div>
++        </li>
++      </ul>
++    </div>
++  </div>
+ <div class="test-content scrollable">
+-<div class="test-content-detail">
+-<div class="detail-body"></div>
++<div class="test-content-tools">
++<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+ </div>
+-</div>
+-</div><div class="container-fluid p-4 view dashboard-view">
++<div class="test-content-detail"><div class="detail-body"></div></div>
++</div></div>
++<div class="container-fluid p-4 view dashboard-view">
+ <div class="row">
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0">Started</p>
+-<h3>Dec 23, 2025 05:20:02 pm</h3>
++<h3>Dec 26, 2025 05:14:47 pm</h3>
+ </div></div>
+ </div>
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0">Ended</p>
+-<h3>Dec 23, 2025 05:20:20 pm</h3>
++<h3>Dec 26, 2025 05:17:51 pm</h3>
+ </div></div>
+ </div>
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0 text-pass">Tests Passed</p>
+-<h3>1</h3>
++<h3>5</h3>
+ </div></div>
+ </div>
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0 text-fail">Tests Failed</p>
+-<h3>1</h3>
++<h3>0</h3>
+ </div></div>
+ </div>
+ </div>
+@@ -302,12 +313,12 @@
+ </div>
+ </div>
+ <div class="card-footer">
+-<div><small data-tooltip='50%'>
+-<b>1</b> tests passed
++<div><small data-tooltip='100%'>
++<b>5</b> tests passed
+ </small>
+ </div>
+ <div>
+-<small data-tooltip='50%'><b>1</b> tests failed,
++<small data-tooltip='0%'><b>0</b> tests failed,
+ <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+ </small>
+ </div>
+@@ -325,9 +336,9 @@
+ </div>
+ </div>
+ <div class="card-footer">
+-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
++<div><small data-tooltip='100%'><b>4</b> events passed</small></div>
+ <div>
+-<small data-tooltip='100%'><b>1</b> events failed,
++<small data-tooltip='0%'><b>0</b> events failed,
+ <b data-tooltip='%'>0</b> others
+ </small>
+ </div>
+@@ -344,7 +355,7 @@
+ </div></div>
+ <script>
+ var timeline = {
+-"C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework//reports//index.html":0,"completeOrderFlow":13.098
++"C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework//reports//index.html":0,"ProductMisMatch":40.343,"submitOrder":41.009,"submitOrder":54.032,"completeOrderFlow":42.726
+ };
+ </script>
+ <div class="row">
+@@ -367,8 +378,8 @@
+ <script>
+ var statusGroup = {
+ parentCount: 5,
+-passParent: 1,
+-failParent: 1,
++passParent: 5,
++failParent: 0,
+ warningParent: 0,
+ skipParent: 0,
+ childCount: 5,
+@@ -384,8 +395,8 @@
+ skipGrandChild: 0,
+ infoGrandChild: 0,
+ eventsCount: 5,
+-passEvents: 0,
+-failEvents: 1,
++passEvents: 4,
++failEvents: 0,
+ warningEvents: 0,
+ skipEvents: 0,
+ infoEvents: 0
+Index: src/test/java/kagishomangaba/tests/regression/OrderTest.java
+===================================================================
+diff --git a/src/test/java/kagishomangaba/tests/regression/OrderTest.java b/src/test/java/kagishomangaba/tests/OrderTest.java
+rename from src/test/java/kagishomangaba/tests/regression/OrderTest.java
+rename to src/test/java/kagishomangaba/tests/OrderTest.java
+--- a/src/test/java/kagishomangaba/tests/regression/OrderTest.java	
++++ b/src/test/java/kagishomangaba/tests/OrderTest.java	
+@@ -1,4 +1,4 @@
+-package kagishomangaba.tests.regression;
++package kagishomangaba.tests;
+ 
+ import kagishomangaba.TestComponents.BaseTest;
+ import kagishomangaba.pages.CataloguePage;
+diff --git a/src/test/java/kagishomangaba/resources/features/CartVerification.feature b/src/test/java/resources/features/CartVerification.feature
+rename from src/test/java/kagishomangaba/resources/features/CartVerification.feature
+rename to src/test/java/resources/features/CartVerification.feature
