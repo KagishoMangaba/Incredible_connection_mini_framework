@@ -5,6 +5,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentReportUtil {
 
+
     public static ExtentReports getReportObject() {
 
         String path = System.getProperty("user.dir") + "//reports//index.html";

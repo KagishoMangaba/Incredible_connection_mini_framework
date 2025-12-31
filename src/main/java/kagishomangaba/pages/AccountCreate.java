@@ -1,0 +1,55 @@
+package kagishomangaba.pages;
+
+import kagishomangaba.base.AbstractComponents;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class AccountCreate extends AbstractComponents {
+
+    private WebDriver driver;
+
+    public AccountCreate(WebDriver driver) {
+        super(driver);
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+
+    @FindBy(id = "firstname")
+    private WebElement firstName;
+
+    @FindBy(id = "lastname")
+    private WebElement lastName;
+
+    @FindBy(id = "cellphone_number")
+    private WebElement cellphoneNumber;
+
+    @FindBy(id = "taxvat")
+    private WebElement vatNumber;
+
+    @FindBy(id = "email_address")
+    private WebElement emailAddress;
+
+    @FindBy(id = "password")
+    private WebElement password;
+
+    @FindBy(id = "identity_number")
+    private WebElement idNumber;
+
+    @FindBy(id = "password-confirmation")
+    private WebElement passwordConfirmation;
+
+    @FindBy(xpath = "//label[@for='switcher--id-field']")
+    private WebElement southAfricaIdentificationType;
+
+    @FindBy(xpath = "label[for='switcher--passport-field'] span")
+    private WebElement passportIdentificationType;
+
+    @FindBy(xpath = "//label[@for='privacy_policy']")
+    private WebElement privacyPolicy;
+
+
+
+}

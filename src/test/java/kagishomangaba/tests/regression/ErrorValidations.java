@@ -15,7 +15,7 @@ import java.time.Duration;
 
 public class ErrorValidations extends BaseTest {
 
-    @Test()
+    @Test(groups = {"regression"})
     public void ProductMisMatch() throws IOException {
 
         String productName = "Apple iPhone 17 256GB Mist Blue";

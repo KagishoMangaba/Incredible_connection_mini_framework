@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class SearchTests extends BaseTest {
 
-    @Test(groups = {"smoke" , "production"} , priority = 1)
+    @Test(groups = {"smoke"} , priority = 1)
     public void verifySearchWithValidProduct() throws IOException {
         LandingPage landingPage = launchApplication();
         landingPage.searchProduct("Ps5");
@@ -22,7 +22,7 @@ public class SearchTests extends BaseTest {
 
 
 
-    @Test(groups = {"smoke", "production"}, priority = 2)
+    @Test(groups = {"smoke"}, priority = 2)
     public void verifySearchWithInvalidProduct() throws IOException {
         LandingPage landingPage = launchApplication();
         landingPage.searchProduct("XYZ123NonExistent");
