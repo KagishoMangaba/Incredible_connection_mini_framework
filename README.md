@@ -16,7 +16,8 @@ Key Objectives
 - Generate clear and actionable execution reports
 - Provide a scalable structure for future expansion
 
-- 🚀 Features
+ 🚀 Features
+
 
 - Integrated Chrome DevTools Protocol (CDP) with Selenium
 - Valid and invalid test coverage
