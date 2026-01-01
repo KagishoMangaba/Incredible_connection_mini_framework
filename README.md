@@ -16,6 +16,21 @@ Key Objectives
 - Generate clear and actionable execution reports
 - Provide a scalable structure for future expansion
 
+- 🚀 Features
+
+- Integrated Chrome DevTools Protocol (CDP) with Selenium
+- Valid and invalid test coverage
+- Page Object Model (POM) architecture
+- Reusable base class for setup and teardown
+- Automatic screenshots captured on test failure
+- Retry logic for unstable tests
+- Parallel test execution enabled
+- Data-driven testing using JSON
+- Extent Reports for detailed execution reports
+- CI/CD ready (Runs remotely with Jenkins)
+- Runs on command terminal
+- Docker Integration with SeleniumGrid
+
 Technology Stack
 
 - Java
