@@ -7,4 +7,5 @@
             <package name="kagishomangaba.tests.smoke"/>
         </packages>
     </test>
+
 </suite>

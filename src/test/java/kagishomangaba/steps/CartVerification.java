@@ -19,7 +19,7 @@ public class CartVerification extends BaseTest {
 
     @Given("the user is on the Incredible Connection landing page")
     public void i_have_landed_on_Incredible_Connection() {
-        // Ensure driver is initialized
+
         if (driver == null) {
             driver = DriverFactory.getDriver();
         }
