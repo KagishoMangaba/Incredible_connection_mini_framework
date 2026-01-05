@@ -1,6 +1,7 @@
 package kagishomangaba.tests.smoke;
 
 import kagishomangaba.TestComponents.BaseTest;
+import kagishomangaba.TestComponents.TestContent;
 import kagishomangaba.pages.CataloguePage;
 import kagishomangaba.pages.LandingPage;
 import kagishomangaba.pages.ShoppingCartPage;
@@ -13,7 +14,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.time.Duration;
 
-public class SearchTests extends BaseTest {
+public class SearchTests extends TestContent {
 
     @Test()
     public void verifySearchWithValidProduct() throws IOException {

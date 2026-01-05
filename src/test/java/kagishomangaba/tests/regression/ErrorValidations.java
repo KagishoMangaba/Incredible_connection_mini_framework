@@ -1,6 +1,7 @@
 package kagishomangaba.tests.regression;
 
 import kagishomangaba.TestComponents.BaseTest;
+import kagishomangaba.TestComponents.TestContent;
 import kagishomangaba.pages.CataloguePage;
 import kagishomangaba.pages.LandingPage;
 import kagishomangaba.pages.ShoppingCartPage;
@@ -13,7 +14,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.time.Duration;
 
-public class ErrorValidations extends BaseTest {
+public class ErrorValidations extends TestContent {
 
     @Test(groups = {"regression"})
     public void ProductMisMatch() throws IOException {

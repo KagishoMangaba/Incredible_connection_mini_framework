@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9698905-9a46-4dd4-b19a-5b6b3715c8be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kagishomangaba/factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kagishomangaba/factory/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/TestComponents/Listeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/steps/CartVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/steps/CartVerification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/steps/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/steps/RegisterAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/steps/RegisterAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/ErrorValidations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/regression/OrderTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuites/testng_smoke.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/testng_smoke.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/smoke/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kagishomangaba/tests/smoke/SearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +86,7 @@
       <recent name="C:\Users\ogkag\IdeaProjects\incredible_connection_automation_framework\testSuites" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.OrderTest">
+  <component name="RunManager" selected="TestNG.C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_regression.xml">
     <configuration name="Feature: CartVerification" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/kagishomangaba/resources/features/CartVerification.feature" />
@@ -117,18 +125,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateNewAccount.createAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_regression.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="incredible_connection_automation_framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kagishomangaba.tests.regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kagishomangaba.tests.regression" />
-      <option name="MAIN_CLASS_NAME" value="kagishomangaba.tests.regression.CreateNewAccount" />
-      <option name="METHOD_NAME" value="createAccountTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuites/testng_regression.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -172,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/ogkag/IdeaProjects/incredible_connection_automation_framework/testSuites/testng_regression.xml" />
         <item itemvalue="TestNG.OrderTest" />
         <item itemvalue="Cucumber Java.Feature: RegisterAccount" />
         <item itemvalue="Cucumber Java.Feature: CartVerification" />
         <item itemvalue="TestNG.OrderTest.createAccountTest" />
-        <item itemvalue="TestNG.CreateNewAccount.createAccountTest" />
       </list>
     </recent_temporary>
   </component>

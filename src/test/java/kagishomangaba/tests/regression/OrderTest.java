@@ -1,6 +1,7 @@
 package kagishomangaba.tests.regression;
 
 import kagishomangaba.TestComponents.BaseTest;
+import kagishomangaba.TestComponents.TestContent;
 import kagishomangaba.pages.AccountCreation;
 import kagishomangaba.pages.CataloguePage;
 import kagishomangaba.pages.LandingPage;
@@ -17,8 +18,10 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 
+import static kagishomangaba.utilities.JsonReaderUtil.getJsonDataToMap;
 
-public class OrderTest extends BaseTest {
+
+public class OrderTest extends TestContent {
 
     @Test(dataProvider = "getData" )
     public void submitOrder(HashMap<String , String> input) throws IOException {

@@ -1,5 +1,6 @@
 package kagishomangaba.factory;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,12 +12,9 @@ public final class DriverFactory {
 
     private static final ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
 
-    private DriverFactory() {
-        // prevent instantiation
-    }
+    private DriverFactory() {}
 
-    public static void initDriver(String browser) {
-
+    public static void createLocalDriver(String browser) {
         WebDriver driver;
 
         switch (browser.toLowerCase()) {
@@ -32,10 +30,6 @@ public final class DriverFactory {
                 break;
         }
 
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // IMPORTANT
-        driver.manage().window().maximize();
-
         driverThreadLocal.set(driver);
     }
 
@@ -44,9 +38,11 @@ public final class DriverFactory {
     }
 
     public static void quitDriver() {
-        if (driverThreadLocal.get() != null) {
-            driverThreadLocal.get().quit();
+        WebDriver driver = driverThreadLocal.get();
+        if (driver != null) {
+            driver.quit();
             driverThreadLocal.remove();
         }
     }
 }
+
