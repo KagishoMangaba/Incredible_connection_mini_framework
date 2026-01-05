@@ -5,13 +5,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import kagishomangaba.TestComponents.BaseTest;
+import kagishomangaba.TestComponents.TestContent;
 import kagishomangaba.factory.DriverFactory;
 import kagishomangaba.pages.CataloguePage;
 import kagishomangaba.pages.LandingPage;
 import kagishomangaba.pages.ShoppingCartPage;
 import org.testng.Assert;
 
-public class CartVerification extends BaseTest {
+public class CartVerification extends TestContent {
 
     private LandingPage landingPage;
     private CataloguePage cataloguePage;

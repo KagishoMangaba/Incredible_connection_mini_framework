@@ -3,6 +3,7 @@ package kagishomangaba.TestComponents;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import kagishomangaba.factory.DriverFactory;
+import kagishomangaba.managers.BrowserManager;
 import kagishomangaba.pages.LandingPage;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -26,89 +27,30 @@ public class BaseTest {
 
     protected WebDriver driver;
 
-    protected LandingPage landingPage;
 
     private static final Logger logger = Logger.getLogger(BaseTest.class.getName());
 
+
+
     @BeforeMethod(alwaysRun = true)
-    public void setUp() throws IOException {
-
-        Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream(
-                Paths.get(
-                        System.getProperty("user.dir"),
-                        "src", "main", "java",
-                        "kagishomangaba", "resources",
-                        "GlobalData.properties"
-                ).toString()
-        );
-
-        prop.load(fis);
-        String browser = prop.getProperty("browser", "chrome");
-
-        DriverFactory.initDriver(browser);
+    public void setUp() {
+        BrowserManager.launchBrowser();
         driver = DriverFactory.getDriver();
-
-        logger.info("Driver initialized with browser: " + browser);
     }
+
+
+
 
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
-        DriverFactory.quitDriver();
-        logger.info("Driver closed successfully");
-    }
-
-    public LandingPage launchApplication() {
-        landingPage = new LandingPage(driver);
-        landingPage.goTo();
-        dismissCookiePopup(); // safe now
-        return landingPage;
-    }
-
-
-    private void dismissCookiePopup() {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            DriverFactory.quitDriver();
+        } catch (Exception ignored) {}
 
-            // Replace with the actual locator of your cookie accept button
-            By cookieBtnLocator = By.id("btn-cookie-allow");
-
-            // Wait until clickable, but do not fail if not found
-            WebElement cookieButton = wait.until(ExpectedConditions.elementToBeClickable(cookieBtnLocator));
-            cookieButton.click();
-            logger.info("Cookie popup dismissed successfully.");
-        } catch (TimeoutException | NoSuchElementException e) {
-            // Cookie popup not present or not clickable
-            logger.info("No cookie popup found, continuing test.");
-        } catch (Exception e) {
-            // Catch-all for unexpected issues
-            logger.warning("Error while attempting to dismiss cookie popup: " + e.getMessage());
-        }
     }
 
 
 
-    public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
-        String jsonContent = FileUtils.readFileToString(
-                new File(filePath),
-                StandardCharsets.UTF_8
-        );
 
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(
-                jsonContent,
-                new TypeReference<List<HashMap<String, String>>>() {}
-        );
-    }
 
-    public String captureScreenshot(String testCaseName) throws IOException {
-
-        File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File target = new File(
-                System.getProperty("user.dir") + "/reports/" + testCaseName + ".png"
-        );
-
-        FileUtils.copyFile(source, target);
-        return target.getAbsolutePath();
-    }
 }

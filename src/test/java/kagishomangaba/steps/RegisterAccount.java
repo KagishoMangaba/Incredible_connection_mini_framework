@@ -3,6 +3,7 @@ package kagishomangaba.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
+import kagishomangaba.TestComponents.TestContent;
 import kagishomangaba.factory.DriverFactory;
 import kagishomangaba.pages.LandingPage;
 import kagishomangaba.pages.AccountCreation;
@@ -11,7 +12,7 @@ import io.cucumber.datatable.DataTable;
 
 import java.util.Map;
 
-public class RegisterAccount extends BaseTest {
+public class RegisterAccount extends TestContent {
 
     private LandingPage landingPage;
     private AccountCreation accountCreationPage;

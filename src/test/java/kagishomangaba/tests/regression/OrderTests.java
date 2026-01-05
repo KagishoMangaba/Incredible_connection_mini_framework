@@ -1,6 +1,7 @@
 package kagishomangaba.tests.regression;
 
 import kagishomangaba.TestComponents.BaseTest;
+import kagishomangaba.TestComponents.TestContent;
 import kagishomangaba.pages.CataloguePage;
 import kagishomangaba.pages.LandingPage;
 import kagishomangaba.pages.ShoppingCartPage;
@@ -9,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class OrderTests extends BaseTest {
+public class OrderTests extends TestContent {
 
 
     @Test(groups = {"regression"}, priority = 1)

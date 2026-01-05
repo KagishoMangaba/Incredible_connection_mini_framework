@@ -6,6 +6,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import kagishomangaba.utilities.ExtentReportUtil;
+import kagishomangaba.utilities.ScreenshotUtil;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -35,18 +36,13 @@ public class Listeners extends BaseTest implements ITestListener {
     public void onTestFailure(ITestResult result) {
         extentTest.get().fail(result.getThrowable());
 
-        // Get driver from the test instance
-        BaseTest testInstance = (BaseTest) result.getInstance();
-        WebDriver driver = testInstance.driver;
+        // Get driver from test instance
+        Object testInstance = result.getInstance();
+        WebDriver driver = ((BaseTest) testInstance).driver; // safer getter method
 
-        try {
-            // Capture screenshot
-            String filePath = testInstance.captureScreenshot(result.getMethod().getMethodName());
-            // Attach to Extent report
-            extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        // Capture screenshot using utility class
+        String filePath = ScreenshotUtil.captureScreenshot(driver, result.getMethod().getMethodName());
+        extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
     }
 
 
