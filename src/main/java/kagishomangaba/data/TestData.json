@@ -2,8 +2,9 @@
 
   {
   "product" : "Apple iPhone 17 256GB Mist Blue",
-    "firstName": "John",
-    "lastName": "Doe",
+   "invalidProduct" : "Iphone 13 plus",
+    "firstName": "Kagisho Price",
+    "lastName": "Mangaba",
     "cellphoneNumber": "0821234567",
     "vatNumber": "123456789",
     "emailAddress": "john.doe@test.com",

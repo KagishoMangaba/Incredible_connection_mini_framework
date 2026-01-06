@@ -25,7 +25,7 @@ public class OrderTests extends TestContent {
         cataloguePage.goToCheckoutPage();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
-        Assert.assertTrue(shoppingCartPage.VerifyProductsDisplay(productName));
+        Assert.assertTrue(shoppingCartPage.verifyProductsDisplay(productName));
 
         //Due to security reasons this is the furthest i can comfortably go
     }

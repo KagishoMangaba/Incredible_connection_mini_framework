@@ -23,25 +23,25 @@ public class AccountCreation extends AbstractComponents {
     }
 
     @FindBy(id = "firstname")
-    private WebElement firstName;
+    private WebElement firstNameInput;
 
     @FindBy(id = "lastname")
-    private WebElement lastName;
+    private WebElement lastNameInput;
 
     @FindBy(id = "cellphone_number")
-    private WebElement cellphoneNumber;
+    private WebElement cellphoneNumberInput;
 
     @FindBy(id = "taxvat")
-    private WebElement vatNumber;
+    private WebElement vatNumberInput;
 
     @FindBy(id = "email_address")
-    private WebElement emailAddress;
+    private WebElement emailAddressInput;
 
     @FindBy(id = "password")
-    private WebElement password;
+    private WebElement passwordInput;
 
     @FindBy(id = "identity_number")
-    private WebElement idNumber;
+    private WebElement idNumberInput;
 
     @FindBy(id = "password-confirmation")
     private WebElement passwordConfirmation;
@@ -56,29 +56,31 @@ public class AccountCreation extends AbstractComponents {
     private WebElement privacyPolicy;
 
 
-    public void enterInformation(String fName,
-                                  String lName,
-                                  String phone,
-                                  String vat,
-                                  String email,
-                                  String pwd,
-                                  String id) {
+    public void enterInformation(String firstName,
+                                 String lastName,
+                                 String cellphoneNumber,
+                                 String vatNumber,
+                                 String emailAddress,
+                                 String password,
+                                 String identityNumber) {
 
         waitForElementToAppear(By.id("firstname"));
 
-        firstName.sendKeys(fName);
-        lastName.sendKeys(lName);
-        cellphoneNumber.sendKeys(phone);
-        vatNumber.sendKeys(vat);
-        emailAddress.sendKeys(email);
-        password.sendKeys(pwd);
-        passwordConfirmation.sendKeys(pwd);
+        enterText(firstNameInput, "First Name", firstName);
+        enterText(lastNameInput, "Last Name", lastName);
+        enterText(cellphoneNumberInput, "Cellphone Number", cellphoneNumber);
+        enterText(vatNumberInput, "VAT Number", vatNumber);
+        enterText(emailAddressInput, "Email Address", emailAddress);
+        enterText(passwordInput, "Password", password);
+        enterText(passwordConfirmation, "Password Confirmation", password);
 
         southAfricaIdentificationType.click();
-        idNumber.sendKeys(id);
+        enterText(idNumberInput, "ID Number", identityNumber);
 
         privacyPolicy.click();
+        //check boxes come preselected so it may de select it
     }
+
 
 
 

@@ -48,9 +48,9 @@ public class CataloguePage extends AbstractComponents {
     public ShoppingCartPage goToCheckoutPage() {
         waitForElementToDisappear(loadingMaskBy);
         waitForElementToAppear(cartCounterBy);
-        waitForElementToBeClickable(cartButton);
+        waitForElementToBeClickable(cartButton , "cart button");
         cartButton.click();
-        waitForElementToBeClickable(viewCartButton);
+        waitForElementToBeClickable(viewCartButton , "view cart");
         viewCartButton.click();
         return new ShoppingCartPage(driver);
     }
@@ -78,7 +78,7 @@ public class CataloguePage extends AbstractComponents {
         }
         WebElement addToCartButton =
                 product.findElement(By.cssSelector(".actions-primary button"));
-        waitForElementToBeClickable(addToCartButton);
+        waitForElementToBeClickable(addToCartButton , "add to cart button");
         addToCartButton.click();
 
         waitForElementToAppear(successMessageBy);

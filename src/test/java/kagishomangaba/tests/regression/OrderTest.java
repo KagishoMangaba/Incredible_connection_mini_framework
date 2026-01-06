@@ -36,7 +36,7 @@ public class OrderTest extends TestContent {
         cataloguePage.goToCheckoutPage();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
-        Assert.assertTrue(shoppingCartPage.VerifyProductsDisplay(input.get("product")));
+        Assert.assertTrue(shoppingCartPage.verifyProductsDisplay(input.get("product")));
     }
 
 

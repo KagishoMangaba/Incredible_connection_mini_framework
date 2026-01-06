@@ -13,26 +13,27 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
 
 public class ErrorValidations extends TestContent {
 
-    @Test(groups = {"regression"})
-    public void ProductMisMatch() throws IOException {
+    @Test(dataProvider = "getData")
+    public void ProductMisMatch(HashMap<String , String> input) throws IOException {
 
-        String productName = "Apple iPhone 17 256GB Mist Blue";
+
 
         LandingPage landingPage = launchApplication();
-        landingPage.searchProduct(productName);
+        landingPage.searchProduct(input.get("product"));
 
         CataloguePage cataloguePage = new CataloguePage(driver);
         WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));
 
 
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(".product-item-info")));
-        cataloguePage.addProductToCart(productName);
+        cataloguePage.addProductToCart(input.get("product"));
         cataloguePage.goToCheckoutPage();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
-        Assert.assertFalse(shoppingCartPage.VerifyProductsDisplay("Iphone 13 pro max 256GB"));
+        Assert.assertFalse(shoppingCartPage.verifyProductsDisplay(input.get("invalidProduct")));
     }
 }
