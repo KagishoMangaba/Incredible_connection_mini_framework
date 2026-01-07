@@ -12,7 +12,7 @@ public class Hooks {
     public void setUp() {
         // Pick your browser here; can also read from config
         String browser = "chrome";
-        DriverFactory.createLocalDriver(browser);
+        DriverFactory.createLocalDriver(browser , false);
     }
 
     @After

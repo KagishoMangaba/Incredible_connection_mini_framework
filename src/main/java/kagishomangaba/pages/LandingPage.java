@@ -1,12 +1,12 @@
 package kagishomangaba.pages;
 
 import kagishomangaba.base.AbstractComponents;
-import org.openqa.selenium.By;
+import kagishomangaba.utilities.ConfigLoader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -29,10 +29,9 @@ public class LandingPage extends AbstractComponents {
     @FindBy(css = ".product-item-info")
     private List<WebElement> products;
 
-    public LandingPage(WebDriver driver) {
-        super(driver);
+    public LandingPage(WebDriver driver , WebDriverWait wait) {
+        super(driver , wait);
         this.driver = driver;
-        PageFactory.initElements(driver, this);
     }
 
 
@@ -40,21 +39,21 @@ public class LandingPage extends AbstractComponents {
       enterText(searchBox , "search box" , productName);
       safeClick(searchButton);
       waitForAllVisible(products);
-      return new CataloguePage(driver);
+      return new CataloguePage(driver , wait);
     }
 
-    public AccountCreation goToCreateAccountPage() {
-        myAccount.click();
+    public AccountCreationPage goToCreateAccountPage() {
+        safeClick(myAccount);
         waitForElementToBeClickable(createAccountBtn , "create Account");
-        createAccountBtn.click();
+        safeClick(createAccountBtn);
 
-        return new AccountCreation(driver);
+        return new AccountCreationPage(driver , wait);
     }
 
 
 
     public void goTo() {
-        driver.get("https://www.incredible.co.za/");
+        driver.get(ConfigLoader.getProperties().getProperty("url"));
     }
 }
 

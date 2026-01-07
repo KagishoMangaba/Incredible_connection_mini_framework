@@ -1,6 +1,7 @@
 package kagishomangaba.base;
 
 import kagishomangaba.pages.ShoppingCartPage;
+import kagishomangaba.utilities.ConfigLoader;
 import kagishomangaba.utilities.LoggerUtil;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -15,10 +16,11 @@ public class AbstractComponents {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
-    public AbstractComponents(WebDriver driver) {
+    public AbstractComponents(WebDriver driver , WebDriverWait wait) {
         this.driver = driver;
+        this.wait = wait;
         PageFactory.initElements(driver , this);
-        this.wait = new WebDriverWait(driver , Duration.ofSeconds(8));
+
     }
 
     @FindBy(css = ".action.showcart" )
@@ -48,14 +50,14 @@ public class AbstractComponents {
     }
 
     protected java.util.List<WebElement> waitForAllVisible(java.util.List<WebElement> elements) {
-        return new WebDriverWait(driver, Duration.ofSeconds(8))
-                .until(driver -> {
-                    for (WebElement e : elements) {
-                        if (!e.isDisplayed()) return null;
-                    }
-                    return elements;
-                });
+        return wait.until(driver -> {
+            for (WebElement e : elements) {
+                if (!e.isDisplayed()) return null;
+            }
+            return elements;
+        });
     }
+
 
     public void waitForElementToDisappear(By locator) {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
@@ -76,11 +78,6 @@ public class AbstractComponents {
 
     }
 
-    public  void clickCookieBtn() {
-        WebElement cookieButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("btn-cookie-allow")));
-        cookieButton.click();
-
-    }
 
     public void clickWithJS(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -95,7 +92,7 @@ public class AbstractComponents {
 
  ShoppingCartPage goToCart() {
      waitForElementToBeClickable(cartHeader , "cart button");
-     return new ShoppingCartPage(driver);
+     return new ShoppingCartPage(driver , wait);
 
 
     }

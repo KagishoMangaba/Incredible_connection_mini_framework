@@ -37,7 +37,7 @@ public class TestContent extends BaseTest {
     }
 
     public LandingPage launchApplication() {
-        landingPage = new LandingPage(driver);
+        landingPage = new LandingPage(driver , wait);
         landingPage.goTo();
         dismissCookiePopup();
         return landingPage;

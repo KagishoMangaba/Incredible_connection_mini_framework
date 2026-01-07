@@ -20,11 +20,11 @@ public class OrderTests extends TestContent {
         LandingPage landingPage = launchApplication();
         landingPage.searchProduct(productName);
 
-        CataloguePage cataloguePage = new CataloguePage(driver);
+        CataloguePage cataloguePage = new CataloguePage(driver , wait);
         cataloguePage.addProductToCart(productName);
         cataloguePage.goToCheckoutPage();
 
-        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver , wait);
         Assert.assertTrue(shoppingCartPage.verifyProductsDisplay(productName));
 
         //Due to security reasons this is the furthest i can comfortably go

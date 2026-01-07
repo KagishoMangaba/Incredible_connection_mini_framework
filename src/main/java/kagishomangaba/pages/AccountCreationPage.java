@@ -6,18 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.DataProvider;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-
-public class AccountCreation extends AbstractComponents {
+public class AccountCreationPage extends AbstractComponents {
 
     private WebDriver driver;
 
-    public AccountCreation(WebDriver driver) {
-        super(driver);
+    public AccountCreationPage(WebDriver driver , WebDriverWait wait) {
+        super(driver , wait);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

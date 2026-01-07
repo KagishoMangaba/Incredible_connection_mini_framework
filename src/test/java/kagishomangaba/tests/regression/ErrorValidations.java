@@ -25,7 +25,7 @@ public class ErrorValidations extends TestContent {
         LandingPage landingPage = launchApplication();
         landingPage.searchProduct(input.get("product"));
 
-        CataloguePage cataloguePage = new CataloguePage(driver);
+        CataloguePage cataloguePage = new CataloguePage(driver , wait);
         WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));
 
 
@@ -33,7 +33,7 @@ public class ErrorValidations extends TestContent {
         cataloguePage.addProductToCart(input.get("product"));
         cataloguePage.goToCheckoutPage();
 
-        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver , wait);
         Assert.assertFalse(shoppingCartPage.verifyProductsDisplay(input.get("invalidProduct")));
     }
 }

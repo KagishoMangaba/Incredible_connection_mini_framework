@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -39,8 +40,8 @@ public class CataloguePage extends AbstractComponents {
     private By viewCartButtonBy = By.cssSelector(".action.viewcart");
 
 
-    public CataloguePage(WebDriver driver) {
-        super(driver);
+    public CataloguePage(WebDriver driver, WebDriverWait wait) {
+        super(driver , wait);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -52,7 +53,7 @@ public class CataloguePage extends AbstractComponents {
         cartButton.click();
         waitForElementToBeClickable(viewCartButton , "view cart");
         viewCartButton.click();
-        return new ShoppingCartPage(driver);
+        return new ShoppingCartPage(driver, wait);
     }
 
     public List<WebElement> getProductList() {

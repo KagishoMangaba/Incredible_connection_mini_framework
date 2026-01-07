@@ -24,7 +24,7 @@ public class SearchTests extends TestContent {
         landingPage.searchProduct(input.get("product"));
         //Valid or invalid is okay since they both exist
 
-        CataloguePage cataloguePage = new CataloguePage(driver);
+        CataloguePage cataloguePage = new CataloguePage(driver , wait);
         Assert.assertTrue(cataloguePage.getProductList().size() > 0,
                 "No products found for valid search");
     }
@@ -35,7 +35,7 @@ public class SearchTests extends TestContent {
     public void verifySearchWithInvalidProduct() throws IOException {
         LandingPage landingPage = launchApplication();
         landingPage.searchProduct("XYZ123NonExistent");
-        CataloguePage cataloguePage = new CataloguePage(driver);
+        CataloguePage cataloguePage = new CataloguePage(driver , wait);
 
     }
 
@@ -47,7 +47,7 @@ public class SearchTests extends TestContent {
         LandingPage landingPage = launchApplication();
         landingPage.searchProduct(input.get("product"));
 
-        CataloguePage cataloguePage = new CataloguePage(driver);
+        CataloguePage cataloguePage = new CataloguePage(driver , wait);
 
 
 //        WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(10));
@@ -56,7 +56,7 @@ public class SearchTests extends TestContent {
         cataloguePage.addProductToCart(input.get("product"));
         cataloguePage.goToCheckoutPage();
 
-        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver , wait);
         Assert.assertFalse(shoppingCartPage.verifyProductsDisplay(input.get("invalidProduct")));
     }
 

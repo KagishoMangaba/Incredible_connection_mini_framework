@@ -30,7 +30,7 @@ public class BaseTest {
 
     protected WebDriver driver;
 
-
+    protected WebDriverWait wait;
     private static final Logger logger = Logger.getLogger(BaseTest.class.getName());
 
 
@@ -39,6 +39,8 @@ public class BaseTest {
     public void setUp() {
         BrowserManager.launchBrowser();
         driver = DriverFactory.getDriver();
+        wait = BrowserManager.getWait();
+        logger.info("Launching browser: " + driver);
     }
 
 
@@ -49,6 +51,7 @@ public class BaseTest {
         try {
             DriverFactory.quitDriver();
         } catch (Exception ignored) {}
+        logger.info("Quitting browser");
 
     }
 
@@ -57,7 +60,11 @@ public class BaseTest {
     public Object[][] getData() throws IOException {
 
         List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir") + "//src//main//java//kagishomangaba//data//TestData.json");
-        return new Object [][] { {data.get(0)}  , {data.get(1)} };
+        Object[][] arr = new Object[data.size()][1];
+        for (int i = 0; i < data.size(); i++) {
+            arr[i][0] = data.get(i);
+        }
+        return arr;
 
     }
 

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -14,8 +15,8 @@ public class ShoppingCartPage extends AbstractComponents {
 
     private WebDriver driver;
 
-    public ShoppingCartPage(WebDriver driver) {
-        super(driver);
+    public ShoppingCartPage(WebDriver driver , WebDriverWait wait) {
+        super(driver , wait);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

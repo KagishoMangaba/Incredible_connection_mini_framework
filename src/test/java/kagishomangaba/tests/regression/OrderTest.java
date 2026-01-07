@@ -1,20 +1,15 @@
 package kagishomangaba.tests.regression;
 
-import kagishomangaba.TestComponents.BaseTest;
 import kagishomangaba.TestComponents.TestContent;
-import kagishomangaba.pages.AccountCreation;
+import kagishomangaba.pages.AccountCreationPage;
 import kagishomangaba.pages.CataloguePage;
 import kagishomangaba.pages.LandingPage;
 import kagishomangaba.pages.ShoppingCartPage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 
@@ -30,12 +25,12 @@ public class OrderTest extends TestContent {
 
         LandingPage landingPage = launchApplication();
         landingPage.searchProduct(input.get("product"));
-        CataloguePage cataloguePage = new CataloguePage(driver);
+        CataloguePage cataloguePage = new CataloguePage(driver , wait);
 
         cataloguePage.addProductToCart(input.get("product"));
         cataloguePage.goToCheckoutPage();
 
-        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver , wait);
         Assert.assertTrue(shoppingCartPage.verifyProductsDisplay(input.get("product")));
     }
 
@@ -47,7 +42,7 @@ public class OrderTest extends TestContent {
         // Launch application
         LandingPage landingPage = launchApplication();
 
-        AccountCreation accountCreationPage = landingPage.goToCreateAccountPage();
+        AccountCreationPage accountCreationPage = landingPage.goToCreateAccountPage();
 
         accountCreationPage.enterInformation(input.get("firstName") , input.get("lastName") , input.get("cellphoneNumber")
                 ,input.get("vatNumber") , input.get("emailAddress") , input.get("password") , input.get("passwordConfirmation"));
