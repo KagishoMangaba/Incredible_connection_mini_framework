@@ -53,3 +53,13 @@ Automating real user authentication and payment transactions introduces risks th
 That said, the framework is not limited by design.
 
 The architecture, page structure, and test flow have all been built in a way that makes adding login and checkout scenarios straightforward and safe once a suitable test environment (with mock users and test payment data) is available.
+
+
+## QA & Automation Highlights
+
+This framework includes real-world QA improvements, such as:
+- Resolving subtle login input issues through isolated responsibility methods
+- Handling page overlays (like cookie banners) to stabilize automated interactions
+
+Detailed documentation of defect discovery, analysis, and solutions is available in the docs folder.
+
