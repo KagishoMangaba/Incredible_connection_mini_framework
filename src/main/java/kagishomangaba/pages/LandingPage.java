@@ -5,7 +5,6 @@ import kagishomangaba.utilities.ConfigLoader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -25,6 +24,9 @@ public class LandingPage extends AbstractComponents {
 
     @FindBy(css = "button[title='Search']")
     private WebElement searchButton;
+
+    @FindBy(xpath = "//a[@class='my-account-plus-more']")
+    private WebElement signInBtn;
 
     @FindBy(css = ".product-item-info")
     private List<WebElement> products;
@@ -48,6 +50,11 @@ public class LandingPage extends AbstractComponents {
         safeClick(createAccountBtn);
 
         return new AccountCreationPage(driver , wait);
+    }
+
+    public LoginPage navigateToSignInPage() {
+        safeClick(signInBtn);
+        return new LoginPage(driver , wait);
     }
 
 

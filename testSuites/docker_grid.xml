@@ -10,7 +10,7 @@
 
     <test name="UI Tests on Chrome (Docker Grid)">
         <classes>
-            <class name="kagishomangaba.tests.regression.OrderTest"/>
+            <class name="kagishomangaba.tests.regression.OrderTests"/>
 
         </classes>
     </test>
