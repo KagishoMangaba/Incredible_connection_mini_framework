@@ -1,0 +1,40 @@
+[
+
+  {
+  "product" : "Russell Hobbs 9L Digital Air Fryer RHAF09S",
+   "invalidProduct" : "Iphone 13 plus",
+    "firstName": "Kagisho Price",
+    "lastName": "Mangaba",
+    "cellphoneNumber": "0821234567",
+    "vatNumber": "123456789",
+    "emailAddress": "john.doe@test.com",
+    "password": "Password@123",
+    "idNumber": "9001015800081",
+    "passwordConfirmation": "Password@123"
+
+
+
+  },
+
+
+  {
+  "product" : "Apple MacBook Air 13 M4 10 Core CPU 8 Core GPU 16GB RAM 256GB SSD Starlight",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "cellphoneNumber": "0839876543",
+    "vatNumber": "987654321",
+    "emailAddress": "jane.smith@test.com",
+    "password": "Password@456",
+    "idNumber": "9102025800082",
+    "passwordConfirmation": "Password@456"
+
+
+
+  }
+
+
+
+
+]
+
+
