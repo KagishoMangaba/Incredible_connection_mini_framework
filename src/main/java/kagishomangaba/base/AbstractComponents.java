@@ -16,15 +16,21 @@ public class AbstractComponents {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
-    public AbstractComponents(WebDriver driver , WebDriverWait wait) {
+    public AbstractComponents(WebDriver driver ) {
         this.driver = driver;
-        this.wait = wait;
         PageFactory.initElements(driver , this);
+        int explicitWait;
+        try {
+            explicitWait = Integer.parseInt(ConfigLoader.getProperties().getProperty("explicitWait"));
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to parse explicitWait from config properties", e);
+        }
+
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(explicitWait));
 
     }
 
-    @FindBy(css = ".action.showcart" )
-    WebElement cartHeader;
+
 
     public WebElement waitForElementToBeClickable(WebElement element, String elementName) {
         try {
@@ -90,33 +96,6 @@ public class AbstractComponents {
     }
 
 
- ShoppingCartPage goToCart() {
-     waitForElementToBeClickable(cartHeader , "cart button");
-     return new ShoppingCartPage(driver , wait);
-
-
-    }
-
-    protected void enterText(WebElement element, String elementName, String inputText) {
-        try {
-            waitForWebElementToAppear(element);
-            element.clear();
-            element.sendKeys(inputText);
-
-            String actualValue = element.getAttribute("value");
-
-            if (!inputText.equals(actualValue)) {
-                throw new RuntimeException(
-                        "Text verification failed for " + elementName +
-                                ". Expected: '" + inputText + "' but found: '" + actualValue + "'"
-                );
-            }
-            LoggerUtil.info("Text '" + inputText + "' entered into " + elementName);
-        } catch (Exception e) {
-            LoggerUtil.severe("Failed to enter text '" + inputText + "' into " + elementName);
-            throw e;
-        }
-    }
 
     public String getPageTitle() {
         return driver.getTitle();

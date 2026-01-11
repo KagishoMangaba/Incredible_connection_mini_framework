@@ -18,7 +18,6 @@ public class RegisterAccount extends TestContent {
     @Given("I am on the landing page")
     public void i_am_on_the_landing_page() {
 
-
         if (driver == null) {
             driver = DriverFactory.getDriver();
         }
@@ -52,3 +51,5 @@ public class RegisterAccount extends TestContent {
 
 
 }
+
+//

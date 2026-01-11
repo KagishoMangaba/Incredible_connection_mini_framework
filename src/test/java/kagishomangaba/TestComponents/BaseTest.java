@@ -29,7 +29,6 @@ import static kagishomangaba.utilities.JsonReaderUtil.getJsonDataToMap;
 public class BaseTest {
 
     protected WebDriver driver;
-
     protected WebDriverWait wait;
     private static final Logger logger = Logger.getLogger(BaseTest.class.getName());
 
@@ -39,7 +38,6 @@ public class BaseTest {
     public void setUp() {
         BrowserManager.launchBrowser();
         driver = DriverFactory.getDriver();
-        wait = BrowserManager.getWait();
         logger.info("Launching browser: " + driver);
     }
 

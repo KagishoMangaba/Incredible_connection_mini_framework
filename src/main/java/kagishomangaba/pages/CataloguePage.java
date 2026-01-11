@@ -40,8 +40,8 @@ public class CataloguePage extends AbstractComponents {
     private By viewCartButtonBy = By.cssSelector(".action.viewcart");
 
 
-    public CataloguePage(WebDriver driver, WebDriverWait wait) {
-        super(driver , wait);
+    public CataloguePage(WebDriver driver) {
+        super(driver );
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -53,7 +53,7 @@ public class CataloguePage extends AbstractComponents {
         cartButton.click();
         waitForElementToBeClickable(viewCartButton , "view cart");
         viewCartButton.click();
-        return new ShoppingCartPage(driver, wait);
+        return new ShoppingCartPage(driver);
     }
 
     public List<WebElement> getProductList() {

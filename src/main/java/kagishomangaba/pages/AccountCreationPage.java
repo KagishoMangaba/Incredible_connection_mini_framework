@@ -1,6 +1,7 @@
 package kagishomangaba.pages;
 
 import kagishomangaba.base.AbstractComponents;
+import kagishomangaba.base.InputUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,13 +10,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AccountCreationPage extends AbstractComponents {
-
     private WebDriver driver;
+    private InputUtil inputUtil;
 
-    public AccountCreationPage(WebDriver driver , WebDriverWait wait) {
-        super(driver , wait);
+    public AccountCreationPage(WebDriver driver) {
+        super(driver);
+        this.inputUtil = new InputUtil(driver);
         this.driver = driver;
-        PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "firstname")
@@ -36,11 +37,11 @@ public class AccountCreationPage extends AbstractComponents {
     @FindBy(id = "password")
     private WebElement passwordInput;
 
-    @FindBy(id = "identity_number")
-    private WebElement idNumberInput;
-
     @FindBy(id = "password-confirmation")
     private WebElement passwordConfirmation;
+
+    @FindBy(id = "identity_number")
+    private WebElement idNumberInput;
 
     @FindBy(xpath = "//label[@for='switcher--id-field']")
     private WebElement southAfricaIdentificationType;
@@ -51,35 +52,80 @@ public class AccountCreationPage extends AbstractComponents {
     @FindBy(xpath = "//label[@for='privacy_policy']")
     private WebElement privacyPolicy;
 
+    // ========= SRP Methods using InputUtil =========
+    public void enterFirstName(String value) {
+        inputUtil.enterText(firstNameInput, "First Name", value);
+    }
 
+    public void enterLastName(String value) {
+        inputUtil.enterText(lastNameInput, "Last Name", value);
+    }
+
+    public void enterCellphoneNumber(String value) {
+        inputUtil.enterText(cellphoneNumberInput, "Cellphone Number", value);
+    }
+
+    public void enterVatNumber(String value) {
+        inputUtil.enterText(vatNumberInput, "VAT Number", value);
+    }
+
+    public void enterEmailAddress(String value) {
+        inputUtil.enterText(emailAddressInput, "Email Address", value);
+    }
+
+    public void enterPassword(String value) {
+        inputUtil.enterText(passwordInput, "Password", value);
+    }
+
+    public void confirmPassword(String value) {
+        inputUtil.enterText(passwordConfirmation, "Password Confirmation", value);
+    }
+
+    public void enterIdentityNumber(String value) {
+        inputUtil.enterText(idNumberInput, "ID Number", value);
+    }
+
+    public void selectSouthAfricanId() {
+        southAfricaIdentificationType.click();
+    }
+
+    public void selectPassportId() {
+        passportIdentificationType.click();
+    }
+
+    public void acceptPrivacyPolicy() {
+        privacyPolicy.click();
+    }
+
+    // ========= Business Workflow =========
     public void enterInformation(String firstName,
                                  String lastName,
                                  String cellphoneNumber,
                                  String vatNumber,
-                                 String emailAddress,
+                                 String email,
                                  String password,
                                  String identityNumber) {
 
         waitForElementToAppear(By.id("firstname"));
 
-        enterText(firstNameInput, "First Name", firstName);
-        enterText(lastNameInput, "Last Name", lastName);
-        enterText(cellphoneNumberInput, "Cellphone Number", cellphoneNumber);
-        enterText(vatNumberInput, "VAT Number", vatNumber);
-        enterText(emailAddressInput, "Email Address", emailAddress);
-        enterText(passwordInput, "Password", password);
-        enterText(passwordConfirmation, "Password Confirmation", password);
+        enterFirstName(firstName);
+        enterLastName(lastName);
+        enterCellphoneNumber(cellphoneNumber);
+        enterVatNumber(vatNumber);
+        enterEmailAddress(email);
+        enterPassword(password);
+        confirmPassword(password);
 
-        southAfricaIdentificationType.click();
-        enterText(idNumberInput, "ID Number", identityNumber);
-
-        privacyPolicy.click();
-        //check boxes come preselected so it may de select it
+        acceptPrivacyPolicy();
     }
 
+    public void idIdentityType(String identityNumber) {
+        selectSouthAfricanId();
+        enterIdentityNumber(identityNumber);
+    }
 
+    public void passportIdentityType() {
+        selectPassportId();
 
-
-
-
+    }
 }
