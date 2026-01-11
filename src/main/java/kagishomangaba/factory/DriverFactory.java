@@ -7,7 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 
 public final class DriverFactory {
@@ -47,6 +50,9 @@ public final class DriverFactory {
         driverThreadLocal.set(driver);
     }
 
+
+
+
     public static WebDriver getDriver() {
         return driverThreadLocal.get();
     }
@@ -58,5 +64,7 @@ public final class DriverFactory {
             driverThreadLocal.remove();
         }
     }
+
+
 }
 

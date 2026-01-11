@@ -15,10 +15,10 @@ public class ShoppingCartPage extends AbstractComponents {
 
     private WebDriver driver;
 
-    public ShoppingCartPage(WebDriver driver , WebDriverWait wait) {
-        super(driver , wait);
+    public ShoppingCartPage(WebDriver driver) {
+        super(driver);
         this.driver = driver;
-        PageFactory.initElements(driver, this);
+
     }
 
     @FindBy(xpath = "//td[@class='col item']//strong[@class='product-item-name']")
@@ -36,7 +36,7 @@ public class ShoppingCartPage extends AbstractComponents {
     private By cartProductsBy = By.xpath("//td[@class='col item']//strong[@class='product-item-name']");
 
 
-    public Boolean verifyProductsDisplay(String productName) {
+    public Boolean isProductInCart(String productName) {
         Boolean match = cartProducts.stream().anyMatch(cartProduct ->
                 cartProduct.getText().equalsIgnoreCase(productName));
         return match;

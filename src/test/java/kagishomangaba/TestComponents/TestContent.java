@@ -21,9 +21,7 @@ public class TestContent extends BaseTest {
     private void dismissCookiePopup() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-
             By cookieBtnLocator = By.id("btn-cookie-allow");
-
             WebElement cookieButton = wait.until(
                     ExpectedConditions.elementToBeClickable(cookieBtnLocator)
             );
@@ -34,10 +32,11 @@ public class TestContent extends BaseTest {
         } catch (TimeoutException | NoSuchElementException e) {
             LoggerUtil.info("No cookie popup found, continuing test.");
         }
+        //This method is used to dismiss coockie as elements get intercepted because of the popup
     }
 
     public LandingPage launchApplication() {
-        landingPage = new LandingPage(driver , wait);
+        landingPage = new LandingPage(driver );
         landingPage.goTo();
         dismissCookiePopup();
         return landingPage;

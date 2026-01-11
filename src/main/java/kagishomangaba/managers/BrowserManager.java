@@ -38,7 +38,5 @@ public class BrowserManager {
         return DriverFactory.getDriver();
     }
 
-    public static WebDriverWait getWait() {
-        return wait;
-    }
+
 }
