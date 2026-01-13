@@ -57,7 +57,7 @@ public class CartVerification extends TestContent {
             throw new IllegalStateException("ShoppingCartPage is not initialized. Ensure navigation to cart executed first.");
         }
         Assert.assertTrue(
-                shoppingCartPage.verifyProductsDisplay(productName),
+                shoppingCartPage.isProductInCart(productName),
                 "Product in cart does not match expected product: " + productName
         );
     }

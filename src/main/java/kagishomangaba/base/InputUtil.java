@@ -17,7 +17,6 @@ public class InputUtil  extends AbstractComponents{
             waitForWebElementToAppear(element);
             element.clear();
             element.sendKeys(inputText);
-
             String actualValue = element.getAttribute("value");
 
             if (!inputText.equals(actualValue)) {

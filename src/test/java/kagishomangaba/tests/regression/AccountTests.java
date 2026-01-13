@@ -1,5 +1,7 @@
 package kagishomangaba.tests.regression;
 
+import kagishomangaba.TestComponents.BaseTest;
+import kagishomangaba.TestComponents.Retry;
 import kagishomangaba.TestComponents.TestContent;
 import kagishomangaba.pages.AccountCreationPage;
 import kagishomangaba.pages.LandingPage;
@@ -8,10 +10,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
+import java.util.logging.Logger;
 
 public class AccountTests extends TestContent {
 
-    @Test(dataProvider = "getData")
+    private static final Logger logger = Logger.getLogger(BaseTest.class.getName());
+
+    @Test(dataProvider = "getData" , retryAnalyzer = Retry.class)
     public void createNewAccount(HashMap<String , String> data) {
         // Launch application
         LandingPage landingPage = launchApplication();
