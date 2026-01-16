@@ -2,18 +2,12 @@ package kagishomangaba.managers;
 
 import kagishomangaba.pages.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Senior-level PageObjectManager
- * Handles lazy initialization of pages
- * Thread-safe if instantiated per test
- * I removed waits in
- */
+
+
 public class PageObjectManager {
 
     private final WebDriver driver;
-
 
     private LandingPage landingPage;
     private CataloguePage cataloguePage;
@@ -26,37 +20,22 @@ public class PageObjectManager {
     }
 
     public LandingPage getLandingPage() {
-        if (landingPage == null) {
-            landingPage = new LandingPage(driver);
-        }
-        return landingPage;
+        return landingPage = (landingPage == null) ? new LandingPage(driver) : landingPage;
     }
 
     public CataloguePage getCataloguePage() {
-        if (cataloguePage == null) {
-            cataloguePage = new CataloguePage(driver);
-        }
-        return cataloguePage;
+        return cataloguePage = (cataloguePage == null) ? new CataloguePage(driver) : cataloguePage;
     }
 
     public ShoppingCartPage getShoppingCartPage() {
-        if (shoppingCartPage == null) {
-            shoppingCartPage = new ShoppingCartPage(driver);
-        }
-        return shoppingCartPage;
+        return shoppingCartPage = (shoppingCartPage == null) ? new ShoppingCartPage(driver) : shoppingCartPage;
     }
 
-    public  AccountCreationPage accountCreationPage() {
-        if(accountCreationPage == null) {
-            accountCreationPage = new AccountCreationPage(driver);
-        }
-        return accountCreationPage;
+    public AccountCreationPage getAccountCreationPage() {
+        return accountCreationPage = (accountCreationPage == null) ? new AccountCreationPage(driver) : accountCreationPage;
     }
 
     public LoginPage getLoginPage() {
-        if(loginPage == null) {
-            loginPage = new LoginPage(driver);
-        }
-        return loginPage;
+        return loginPage = (loginPage == null) ? new LoginPage(driver) : loginPage;
     }
 }

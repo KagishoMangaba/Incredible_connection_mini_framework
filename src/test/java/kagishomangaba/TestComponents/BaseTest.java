@@ -38,7 +38,7 @@ public class BaseTest {
     public void setUp() {
         BrowserManager.launchBrowser();
         driver = DriverFactory.getDriver();
-        logger.info("Launching browser: " + driver);
+        logger.info("Launching browser");
     }
 
 
