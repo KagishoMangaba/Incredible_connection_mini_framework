@@ -22,30 +22,33 @@ public final class DriverFactory {
     public static void createLocalDriver(String browser, boolean headless) {
         WebDriver driver;
 
-        switch (browser.toLowerCase()) {
+        String browserLower = browser.toLowerCase();
 
-            case "edge":
-                WebDriverManager.edgedriver().setup();
-                EdgeOptions edgeOptions = new EdgeOptions();
-                if (headless) edgeOptions.addArguments("--headless=new");
-                driver = new EdgeDriver(edgeOptions);
-                break;
+        if (browserLower.equals("edge")) {
+            WebDriverManager.edgedriver().setup();
+            EdgeOptions edgeOptions = new EdgeOptions();
+            if (headless) {
+                edgeOptions.addArguments("--headless=new");
+            }
+            driver = new EdgeDriver(edgeOptions);
 
-            case "chrome":
-                WebDriverManager.chromedriver().setup();
-                ChromeOptions chromeOptions = new ChromeOptions();
+        } else if (browserLower.equals("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions chromeOptions = new ChromeOptions();
 
-                if (headless) chromeOptions.addArguments("--headless=new");
+            if (headless) {
+                chromeOptions.addArguments("--headless=new");
+            }
 
-                chromeOptions.addArguments("--disable-gpu");
-                chromeOptions.addArguments("--window-size=1920,1080");
+            chromeOptions.addArguments("--disable-gpu");
+            chromeOptions.addArguments("--window-size=1920,1080");
 
-                driver = new ChromeDriver(chromeOptions);
-                break;
+            driver = new ChromeDriver(chromeOptions);
 
-            default:
-                throw new RuntimeException("Unsupported browser: " + browser);
+        } else {
+            throw new RuntimeException("Unsupported browser: " + browser);
         }
+
 
         driverThreadLocal.set(driver);
     }

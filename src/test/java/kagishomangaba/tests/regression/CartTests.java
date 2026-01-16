@@ -26,7 +26,7 @@ public class CartTests extends TestContent {
         cataloguePage.goToCheckoutPage();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver );
-        Assert.assertTrue(shoppingCartPage.verifyProductsDisplay(input.get("product")));
+        Assert.assertTrue(shoppingCartPage.isProductInCart(input.get("product")));
     }
 
     @Test(dataProvider = "getData")
@@ -43,7 +43,7 @@ public class CartTests extends TestContent {
         cataloguePage.goToCheckoutPage();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver );
-        Assert.assertFalse(shoppingCartPage.verifyProductsDisplay(input.get("invalidProduct")));
+        Assert.assertFalse(shoppingCartPage.isProductInCart(input.get("invalidProduct")));
     }
 
 
