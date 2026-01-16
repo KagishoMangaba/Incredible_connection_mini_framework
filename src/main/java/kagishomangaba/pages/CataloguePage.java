@@ -11,8 +11,11 @@ import java.util.List;
 
 public class CataloguePage extends PageInteractions {
 
+    public CataloguePage(WebDriver driver) {
+        super(driver );
 
-    private WebDriver driver;
+    }
+
 
     @FindBy(css = ".action.showcart")
     private WebElement cartButton;
@@ -39,11 +42,7 @@ public class CataloguePage extends PageInteractions {
     private By viewCartButtonBy = By.cssSelector(".action.viewcart");
 
 
-    public CataloguePage(WebDriver driver) {
-        super(driver );
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
+
 
     public ShoppingCartPage goToCheckoutPage() {
         waitForElementToDisappear(loadingMaskBy);

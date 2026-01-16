@@ -8,13 +8,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AccountCreationPage extends PageInteractions {
-    private WebDriver driver;
+
     private InputUtil inputUtil;
 
     public AccountCreationPage(WebDriver driver) {
         super(driver);
-        this.inputUtil = new InputUtil(driver);
-        this.driver = driver;
+        this.inputUtil = new InputUtil(super.driver);
+
     }
 
     @FindBy(id = "firstname")

@@ -11,8 +11,15 @@ import java.util.List;
 
 public class LandingPage extends PageInteractions {
 
-    private WebDriver driver;
     private InputUtil inputUtil;
+
+    public LandingPage(WebDriver driver ) {
+        super(driver);
+        this.inputUtil =new InputUtil(super.driver);
+    }
+
+
+
     @FindBy(xpath = "//div[@class='my-account icon__expand-arrow']")
     private WebElement myAccount;
 
@@ -31,11 +38,7 @@ public class LandingPage extends PageInteractions {
     @FindBy(css = ".product-item-info")
     private List<WebElement> products;
 
-    public LandingPage(WebDriver driver ) {
-        super(driver);
-        this.driver = driver;
-        this.inputUtil =new InputUtil(driver);
-    }
+
 
 
     public CataloguePage searchProduct(String productName) {

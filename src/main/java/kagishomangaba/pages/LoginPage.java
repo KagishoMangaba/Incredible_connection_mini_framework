@@ -11,8 +11,8 @@ public class LoginPage extends PageInteractions {
     private InputUtil inputUtil;
 
     public LoginPage(WebDriver driver ) {
-        super(driver );
-        this.inputUtil = new InputUtil(driver);
+        super(driver);
+        this.inputUtil = new InputUtil(super.driver);
 
     }
 
