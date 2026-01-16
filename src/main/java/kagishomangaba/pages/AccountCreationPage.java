@@ -1,15 +1,13 @@
 package kagishomangaba.pages;
 
-import kagishomangaba.base.AbstractComponents;
+import kagishomangaba.base.PageInteractions;
 import kagishomangaba.base.InputUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AccountCreationPage extends AbstractComponents {
+public class AccountCreationPage extends PageInteractions {
     private WebDriver driver;
     private InputUtil inputUtil;
 
@@ -54,35 +52,35 @@ public class AccountCreationPage extends AbstractComponents {
 
     // ========= SRP Methods using InputUtil =========
     public void enterFirstName(String value) {
-        inputUtil.enterText(firstNameInput, "First Name", value);
+        inputUtil.enterText(firstNameInput, value);
     }
 
     public void enterLastName(String value) {
-        inputUtil.enterText(lastNameInput, "Last Name", value);
+        inputUtil.enterText(lastNameInput,  value);
     }
 
     public void enterCellphoneNumber(String value) {
-        inputUtil.enterText(cellphoneNumberInput, "Cellphone Number", value);
+        inputUtil.enterText(cellphoneNumberInput,  value);
     }
 
     public void enterVatNumber(String value) {
-        inputUtil.enterText(vatNumberInput, "VAT Number", value);
+        inputUtil.enterText(vatNumberInput,  value);
     }
 
     public void enterEmailAddress(String value) {
-        inputUtil.enterText(emailAddressInput, "Email Address", value);
+        inputUtil.enterText(emailAddressInput,  value);
     }
 
     public void enterPassword(String value) {
-        inputUtil.enterText(passwordInput, "Password", value);
+        inputUtil.enterText(passwordInput,  value);
     }
 
     public void confirmPassword(String value) {
-        inputUtil.enterText(passwordConfirmation, "Password Confirmation", value);
+        inputUtil.enterText(passwordConfirmation,  value);
     }
 
     public void enterIdentityNumber(String value) {
-        inputUtil.enterText(idNumberInput, "ID Number", value);
+        inputUtil.enterText(idNumberInput,  value);
     }
 
     public void selectSouthAfricanId() {

@@ -1,16 +1,15 @@
 package kagishomangaba.pages;
 
-import kagishomangaba.base.AbstractComponents;
+import kagishomangaba.base.PageInteractions;
 import kagishomangaba.base.InputUtil;
 import kagishomangaba.utilities.ConfigLoader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public class LandingPage extends AbstractComponents {
+public class LandingPage extends PageInteractions {
 
     private WebDriver driver;
     private InputUtil inputUtil;
@@ -40,7 +39,7 @@ public class LandingPage extends AbstractComponents {
 
 
     public CataloguePage searchProduct(String productName) {
-      inputUtil.enterText(searchBox , "search box" , productName);
+      inputUtil.enterText(searchBox  , productName);
       safeClick(searchButton);
       waitForAllVisible(products);
       return new CataloguePage(driver );

@@ -1,12 +1,12 @@
 package kagishomangaba.components;
 
-import kagishomangaba.base.AbstractComponents;
+import kagishomangaba.base.PageInteractions;
 import kagishomangaba.pages.ShoppingCartPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HeaderComponent  extends AbstractComponents {
+public class HeaderComponent  extends PageInteractions {
 
     public HeaderComponent(WebDriver driver) {
         super(driver);
