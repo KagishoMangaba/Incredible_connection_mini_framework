@@ -63,3 +63,10 @@ This framework includes real-world QA improvements, such as:
 
 Detailed documentation of defect discovery, analysis, and solutions is available in the docs folder.
 
+
+
+
+https://github.com/user-attachments/assets/baa96a88-1ef6-4b80-b259-5fca4ff04e21
+
+
+
