@@ -35,6 +35,8 @@ public class TestContent extends BaseTest {
         //This method is used to dismiss coockie as elements get intercepted because of the popup
     }
 
+
+
     public LandingPage launchApplication() {
         landingPage = new LandingPage(driver );
         landingPage.goTo();

@@ -50,8 +50,12 @@ public final class DriverFactory {
         }
 
 
+
+
         driverThreadLocal.set(driver);
     }
+
+
 
 
 
